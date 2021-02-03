@@ -1,0 +1,95 @@
+{
+"results" : [
+
+  {
+    "objectId": "qgnWJsDvF0",
+    "city": "New York",
+    "createdAt": "2019-07-13T15:03:51.905Z",
+    "updatedAt": "2019-07-13T15:03:51.905Z"
+  },
+  {
+    "objectId": "hJSqgnvEUw",
+    "city": "Los Angeles",
+    "createdAt": "2019-07-13T15:03:57.957Z",
+    "updatedAt": "2019-07-13T15:03:57.957Z"
+  },
+  {
+    "objectId": "43wGAyhqYZ",
+    "city": "Chicago",
+    "createdAt": "2019-07-13T15:04:03.279Z",
+    "updatedAt": "2019-07-13T15:04:03.279Z"
+  },
+  {
+    "objectId": "N3p6EJVc0b",
+    "city": "Washington",
+    "createdAt": "2019-07-13T15:04:08.349Z",
+    "updatedAt": "2019-07-13T15:04:08.349Z"
+  },
+  {
+    "objectId": "KorGwgboV3",
+    "city": "London",
+    "createdAt": "2019-07-13T15:04:14.634Z",
+    "updatedAt": "2019-07-13T15:04:14.634Z"
+  },
+  {
+    "objectId": "d5zoIU0rEU",
+    "city": "Berlin",
+    "createdAt": "2019-07-13T15:04:21.187Z",
+    "updatedAt": "2019-07-13T15:04:21.187Z"
+  },
+  {
+    "objectId": "jMM1RFS5px",
+    "city": "Munich",
+    "createdAt": "2019-07-13T15:04:39.955Z",
+    "updatedAt": "2019-07-13T15:04:39.955Z"
+  },
+  {
+    "objectId": "lD7TzrJF3D",
+    "city": "Paris",
+    "createdAt": "2019-07-13T15:04:45.464Z",
+    "updatedAt": "2019-07-13T15:04:45.464Z"
+  },
+  {
+    "objectId": "02OGv0sThQ",
+    "city": "Madrid",
+    "createdAt": "2019-07-13T15:04:52.332Z",
+    "updatedAt": "2019-07-13T15:04:52.332Z"
+  },
+  {
+    "objectId": "B648z4TW6L",
+    "city": "Barcelona",
+    "createdAt": "2019-07-13T15:04:58.187Z",
+    "updatedAt": "2019-07-13T15:04:58.187Z"
+  },
+  {
+    "objectId": "H49TWizrzJ",
+    "city": "Rome",
+    "createdAt": "2019-07-13T15:05:17.604Z",
+    "updatedAt": "2019-07-13T15:05:17.604Z"
+  },
+  {
+    "objectId": "ZExMdFBAke",
+    "city": "Milano",
+    "createdAt": "2019-07-13T15:05:24.421Z",
+    "updatedAt": "2019-07-13T15:05:24.421Z"
+  },
+  {
+    "objectId": "LJ78S4uTx2",
+    "city": "Istanbul",
+    "createdAt": "2019-07-13T15:05:29.651Z",
+    "updatedAt": "2019-07-13T15:05:29.651Z"
+  },
+  {
+    "objectId": "SnZ6FiSIek",
+    "city": "Moscow",
+    "createdAt": "2019-07-13T15:05:36.517Z",
+    "updatedAt": "2019-07-13T15:05:36.517Z"
+  },
+  {
+    "objectId": "pN2BLSAags",
+    "city": "Athens",
+    "createdAt": "2019-07-13T15:05:51.702Z",
+    "updatedAt": "2019-07-13T15:05:51.702Z"
+  }
+]
+}

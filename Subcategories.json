@@ -1,0 +1,134 @@
+{
+"results" : [
+
+  {
+    "objectId": "916b7GUBrG",
+    "subcategory": "House",
+    "createdAt": "2020-01-07T14:38:11.297Z",
+    "updatedAt": "2020-01-11T12:13:36.518Z",
+    "topcategory": "Real Estate",
+    "image": {
+      "__type": "File",
+      "name": "67af74c36b913cb9e58f5f85c692221a_960x0.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/67af74c36b913cb9e58f5f85c692221a_960x0.jpg"
+    }
+  },
+  {
+    "objectId": "iIHcbTG5YF",
+    "subcategory": "Workplace",
+    "createdAt": "2020-01-07T14:38:17.040Z",
+    "updatedAt": "2020-01-11T12:12:33.807Z",
+    "topcategory": "Real Estate",
+    "image": {
+      "__type": "File",
+      "name": "e89aef474b218a9aa593a082ba450daa_smart-office.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/e89aef474b218a9aa593a082ba450daa_smart-office.jpg"
+    }
+  },
+  {
+    "objectId": "PuOatii394",
+    "createdAt": "2020-01-09T11:39:52.168Z",
+    "updatedAt": "2020-01-10T12:55:12.643Z",
+    "subcategory": "Phone",
+    "topcategory": "Electronics"
+  },
+  {
+    "objectId": "ykJnEP2yBA",
+    "subcategory": "Laptop",
+    "createdAt": "2020-01-09T11:40:02.342Z",
+    "updatedAt": "2020-01-10T12:55:05.393Z",
+    "topcategory": "Electronics"
+  },
+  {
+    "objectId": "0H5Z4sG1rK",
+    "subcategory": "Automobile",
+    "createdAt": "2020-01-10T13:37:17.701Z",
+    "updatedAt": "2020-01-10T13:37:19.542Z",
+    "topcategory": "Cars"
+  },
+  {
+    "objectId": "JxRZ77zB6u",
+    "subcategory": "Motorcycle",
+    "createdAt": "2020-01-10T13:37:39.829Z",
+    "updatedAt": "2020-01-10T13:37:41.808Z",
+    "topcategory": "Cars"
+  },
+  {
+    "objectId": "4qbLAm4D43",
+    "subcategory": "Women",
+    "createdAt": "2020-01-10T13:37:54.835Z",
+    "updatedAt": "2020-01-10T13:37:58.589Z",
+    "topcategory": "Clothing"
+  },
+  {
+    "objectId": "NeZDJaIkvn",
+    "subcategory": "Men",
+    "createdAt": "2020-01-10T13:38:04.670Z",
+    "updatedAt": "2020-01-10T13:38:09.185Z",
+    "topcategory": "Clothing"
+  },
+  {
+    "objectId": "OX0yGsTrEl",
+    "subcategory": "Kids",
+    "createdAt": "2020-01-10T13:38:13.771Z",
+    "updatedAt": "2020-01-10T13:38:16.686Z",
+    "topcategory": "Clothing"
+  },
+  {
+    "objectId": "A2gENdYPSf",
+    "topcategory": "Accessories",
+    "createdAt": "2020-01-10T13:38:31.300Z",
+    "updatedAt": "2020-01-10T13:38:35.107Z",
+    "subcategory": "Necklace"
+  },
+  {
+    "objectId": "xDGnRY5HXE",
+    "topcategory": "Accessories",
+    "createdAt": "2020-01-10T13:38:47.369Z",
+    "updatedAt": "2020-01-10T13:38:49.496Z",
+    "subcategory": "Earring"
+  },
+  {
+    "objectId": "azkdLUiOVL",
+    "subcategory": "Wedding",
+    "createdAt": "2020-01-10T13:39:04.918Z",
+    "updatedAt": "2020-01-10T13:39:08.563Z",
+    "topcategory": "Organizations"
+  },
+  {
+    "objectId": "SXGv5hOacE",
+    "topcategory": "Organizations",
+    "createdAt": "2020-01-10T13:39:12.853Z",
+    "updatedAt": "2020-01-10T13:39:15.579Z",
+    "subcategory": "Concert"
+  },
+  {
+    "objectId": "4wBERE8S5o",
+    "topcategory": "Home Decoration",
+    "createdAt": "2020-01-10T13:39:24.873Z",
+    "updatedAt": "2020-01-10T13:39:29.664Z",
+    "subcategory": "Living Room"
+  },
+  {
+    "objectId": "n5EpRbdFJf",
+    "topcategory": "Home Decoration",
+    "createdAt": "2020-01-10T13:39:35.506Z",
+    "updatedAt": "2020-01-10T13:39:38.282Z",
+    "subcategory": "Kitchen"
+  },
+  {
+    "objectId": "nyWy7WF3zx",
+    "subcategory": "Makeup",
+    "createdAt": "2020-01-10T13:39:55.279Z",
+    "updatedAt": "2020-01-10T13:39:59.759Z",
+    "topcategory": "Cosmetics"
+  },
+  {
+    "objectId": "ALYIbqCGCS",
+    "topcategory": "Cosmetics",
+    "createdAt": "2020-01-10T13:40:35.987Z",
+    "updatedAt": "2020-01-10T13:40:39.033Z",
+    "subcategory": "Body Care"
+  }
+]
+}

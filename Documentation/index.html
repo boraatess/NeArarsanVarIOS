@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Classifier - Classified & Listing Native IOS App</title>
+ 	<meta name="description" content="">
+	<meta name="author" content="CarbonCode Technology">
+	<meta name="copyright" content="CarbonCode Technology">
+	<meta name="generator" content="Documenter v2.0 https://evp.to/documenter">
+	<meta name="date" content="2019-07-23T16:54:46+02:00">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+
+	<style>
+		html, body{background-color:#FFFFFF;color:#412E28;}
+		h1,h2,h3,h4,h5,h6{color:#412E28;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#2B2302;color:#B3204D;}
+		::selection{background:#2B2302;color:#B3204D;}
+		a.brand{background-image:url(http://carboncodetechnology.com/wp-content/uploads/2019/07/classifier-white.png);}
+		a, a:hover, a:active{color:#B3204D;}
+		hr{border-top:1px solid #DBE3DC;border-bottom:1px solid #F6FFF7;}
+		div.navbar-inner, .navbar .nav li ul{background:#261F02;color:#EDF6EE;http://static.revaxarts-themes.com/noise.gif}
+		a.btn-navbar{background:#261F02;color:#EDF6EE;}
+		.navbar .nav li a{color:#EDF6EE;text-shadow:1px 1px 0px #382E03;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#F6FFF7;}
+		.navbar .nav > li a{color:#EDF6EE;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#2B2302;color:#B3204D;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#2B2302;color:#B3204D;}
+		.navbar .nav li ul li a:hover{background:#2B2302;color:#B3204D;}
+		.navbar .nav li ul li a:active{background:#2B2302;color:#B3204D;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #B3204D, #7D1636);
+			  background-image: -ms-linear-gradient(top, #B3204D, #7D1636);
+			  background-image: -webkit-gradient(linear, 0 0, 0 B3204D%, from(#261F02), to(#7D1636));
+			  background-image: -webkit-linear-gradient(top, #B3204D, #7D1636);
+			  background-image: -o-linear-gradient(top, #B3204D, #7D1636);
+			  background-image: linear-gradient(top, #B3204D, #7D1636);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3204D', endColorstr='#7D1636', GradientType=0);
+			  border-color: #7D1636 #7D1636 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #7D1636;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+	<link rel="stylesheet" src="http://revaxarts-themes.com/documenter/_css/custom.css" media="screen">
+
+	<script src="assets/js/cufon.js"></script><script src="http://revaxarts-themes.com/_js/font.js"></script><script>Cufon.replace("h1, h2, h3, h4, h5, h6");</script>
+    </head>
+
+<body class="documenter-project-classifier" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+			<a class="brand" href="#">Classifier - Classified & Listing Native IOS App</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#customization" title="Customization">Customization</a></li>
+			<li><a href="#configuration" title="Configuration">Configuration</a></li>
+			<li><a href="#parse_database_setup" title="Parse Database Setup">Parse Database Setup</a></li>
+			<li><a href="#facebook_login_setup" title="Facebook Login Setup">Facebook Login Setup</a></li>
+			<li><a href="#push_notifications_setup_part_1" title="Push Notifications Setup - Part 1">Push Notifications Setup - Part 1</a></li>
+			<li><a href="#push_notifications_setup_part_2" title="Push Notifications Setup - Part 2">Push Notifications Setup - Part 2</a>
+				<ul>
+					<li><a href="#push_notifications_setup_part_2__nbsp">&nbsp;</a>
+				</ul>
+			</li>
+			<li><a href="#admob_banners_setup" title="AdMob Banners Setup">AdMob Banners Setup</a></li>
+			<li><a href="#how_to_publish_the_app_to_app_store" title="How to Publish the App to App Store">How to Publish the App to App Store</a></li>
+			<li><a href="#app_rating" title="App Rating">App Rating</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->
+
+<div class="container" id="documenter_content">
+
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Classifier - Classified & Listing Native IOS App</h1>
+	    <p></p>
+	    <ul class="marketing-byline">
+			
+			
+			<li>by: CarbonCode Technology</li>
+			<li><a href=""></a></li>
+		</ul>
+	    <p class="download-info">
+			<a href="http://carboncodetechnology.com" class="btn btn-primary btn-large">Visit Us</a> 
+		</p>
+
+	</div> <!-- masthead -->
+
+   <div id="intro">
+    <p class="highlight hero-unit">Welcome to Classifier Documentation.
+Thank you for purchasing. 
+If you have any questions that are beyond the scope of this help file, please feel free to contact us. 
+Best of luck !</p>
+   </div> <!-- intro -->
+
+	</div>
+
+  <section id="customization">
+	<div class="page-header"><h3>Customization</h3><hr class="notop"></div>
+<h6>
+	&nbsp;</h6>
+<ul>
+	<li>
+		<h6>
+			<strong>BUNDLE IDENTIFIER &amp; APP NAME&nbsp;</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	Once you have generated a new App ID and Distribution Provisioning file from the&nbsp;<span style="color: #ff00ff;"><strong><a href="https://developer.apple.com/ios/manage/overview/index.action" rel="noopener" style="color: #ff00ff;" target="_blank">Apple Developer Portal</a></strong></span>&nbsp;(in order for you to be able to upload the binary of your app), you must change the&nbsp;Bundle Identifier&nbsp;accordingly to the one you generated in your app&#39;s&nbsp;<span style="color: #ff0000;">Provisioning Profile</span>.<br>
+	You must also change the&nbsp;<span style="color: #ff0000;">Display Name</span>&nbsp;as you wish, so you&rsquo;ll see your own app&rsquo;s name underneath the app icon (see below):</p>
+<p style="margin-left: 160px;">
+	<img alt="" class="aligncenter wp-image-1023 size-full" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/classifierson1-e1563115049709.jpg" style="color: rgb(58, 135, 173); width: 644px; height: 312px;"></p>
+<p style="margin-left: 160px;">
+	&nbsp;</p>
+<div class="alert alert-error" style="color: rgb(185, 74, 72); margin-left: 80px;">
+	<em><b>IMPORTANT :</b></em><br>
+	<br>
+	<em>Do not change the&nbsp;<strong>Classifier</strong>&nbsp;folder&rsquo;s name or Project&rsquo;s name, otherwise XCode won&rsquo;t recognize the app and you won&rsquo;t be able to test it on the iOS Simulator nor Archive it for AppStore publishing.</em><br>
+	<br>
+	<em>Also, while preparing your app&rsquo;s page for Review on iTunes Connect you should write something about how your app works in the Notes field and provide a demo account as well. This is because lately Apple reviewers are acting a bit bad and may reject your app for some reasons, we don&rsquo;t want that to happen, although if it will, don&rsquo;t get upset, just wait 2-3 days and resubmit a new binary for review until you get approval</em>&nbsp;.</div>
+<h6>
+	&nbsp;</h6>
+<ul>
+	<li>
+		<h6>
+			<strong>ARCHIVE THE APP</strong></h6>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 40px;">
+	To archive the app and be able to upload it to the iTunes App Store, select&nbsp;<span style="color: #ff0000;">Generic iOS Device</span>&nbsp;on the devices list and then click on&nbsp;<span style="color: #ff0000;">Product -&gt; Archive</span> to launch the&nbsp;<span style="color: #ff0000;">Organizer</span>&nbsp;and archive your app (see below):</p>
+<h5 style="margin-left: 240px;">
+	<img alt="" class="wp-image-1024 size-full aligncenter" height="462" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/classifierson2.png" width="523"><br>
+	&nbsp;</h5>
+<ul>
+	<li>
+		<h6>
+			<strong>USER INTERFACE</strong></h6>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 80px;">
+	If you want to edit the User Interface of this app, you can do so by editing the Storyboard file called&nbsp;<span style="color: #ff0000;">Main.storyboard</span>. You can edit buttons, labels and ImageViews via the&nbsp;<span style="color: #ff0000;">Inspector</span>&nbsp;panel on the right side of the Xcode window, and select them by the the&nbsp;<span style="color: #ff0000;">Document Outline</span>&nbsp;panel.</p>
+<div class="alert" style="padding-left: 30px; margin-left: 80px;">
+	<span style="background-color: rgb(252, 248, 227);">Please always use the latest version of Xcode.</span></div>
+<h6>
+	&nbsp;</h6>
+<ul>
+	<li>
+		<h6>
+			<strong>IMAGES</strong></h6>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 80px;">
+	You can easily change App icons, logo, buttons and other images by accessing the&nbsp;<span style="color: #ff0000;">Assets.xcassets</span>&nbsp;folder and editing the&nbsp;<span style="color: #ff0000;">.png</span>&nbsp;and&nbsp;<span style="color: #ff0000;">.jpg</span>&nbsp;images in there, just&nbsp;<span style="color: #ff0000;">do not rename</span><span style="font-size: 16px; color: #ff0000;">&nbsp;</span>them so XCode will still recognize them. Make your reskin and save your new&nbsp;<span style="color: #ff0000;">.png</span>&nbsp;files with the same names as the existing ones in the project.</p>
+<h6 style="margin-left: 80px;">
+	&nbsp;</h6>
+<ul>
+	<li>
+		<h6>
+			<strong>TERMS OF SERVICE HTML FILE</strong></h6>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 80px;">
+	You can find an HTML file called&nbsp;<span style="color: #ff0000;">tos.html</span>&nbsp;into the XCode project, that&rsquo;s a file you can edit as you wish in order to get approved by Apple under the EULA agreement, since this app is providing public contents that may also be reported by users and must be moderated by you or who works with you. You must edit it as you wish, since there is&nbsp;<span style="color: #ff0000;">APP_NAME</span>&nbsp;here and there, replace it with your app&rsquo;s name and read it carefully before publishing the app on the App Store.</p>
+<h6>
+	&nbsp;</h6>
+<ul>
+	<li>
+		<h6>
+			<strong>PRIVACY POLICY</strong></h6>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 80px;">
+	Because of <span style="color: #ff0000;">EU GDPR laws since 25 May 2018</span>, you have to also check the&nbsp;<span style="color: #ff0000;">Privacy Policy</span>&nbsp;statements on the bottom of that file and edit the contact email address into your own email address:</p>
+<div class="alert" style="padding-left: 30px; margin-left: 80px;">
+	<span style="color: #333333;">href= &nbsp;&quot;mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;&quot;&gt; &#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;</span></div>
+<h6>
+	&nbsp;</h6>
+<ul>
+	<li>
+		<h6>
+			<strong>DELETE USER ACCOUNT</strong></h6>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 80px;">
+	In case some user will ask you to delete his/her account, you must enter your Parse Dashboard, search for its&nbsp;<span style="color: #ff0000;">objectId</span>&nbsp;or&nbsp;<span style="color: #ff0000;">username</span>&nbsp;in all Classes, and delete the rows that contain such objectId in their cells (Pointers included).</p>
+</section>
+<section id="configuration">
+	<div class="page-header"><h3>Configuration</h3><hr class="notop"></div>
+<p style="margin-left: 40px;">
+	Head over&nbsp;<span style="color: #ff0000;">Configs.swift</span>&nbsp;file and check out the&nbsp;<span style="color: #ff0000;">comments</span>&nbsp;in such file which will help you editing this template.&nbsp;</p>
+<h5 style="margin-left: 40px;">
+	&nbsp;</h5>
+<ul>
+	<li>
+		<h6>
+			<strong>CHANCE CURRENCY</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	In order to set the currency symbol for your Ads you need to change the&nbsp;$&nbsp;string into the one you wish:</p>
+<div class="alert" style="margin-left: 80px;">
+	let CURRENCY = <span style="color: #ff0000;">&quot;$&quot;</span></div>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<ul>
+	<li>
+		<h6>
+			<strong>APP NAME</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	<span style="font-size: 12px;">Change the app name string of this line accordingly to the new name you&#39;ll give to your own version of this app:</span></p>
+<div class="alert" style="margin-left: 80px;">
+	let APP_NAME = <span style="color: #ff0000;">&quot;Classifier&quot;</span></div>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<ul>
+	<li>
+		<h6>
+			<strong>APP COLORS</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	You can change the RGB values of this line of code as you wish : (<em><span style="color: #339966;">MAIN COLOR = WHITE, SECOND COLOR = ORANGE</span>)</em></p>
+<div class="alert" style="margin-left: 80px;">
+	let MAIN_COLOR = UIColor(red: <span style="color: #ff0000;">255</span>/255, green: <span style="color: #ff0000;">255</span>/255, blue: <span style="color: #ff0000;">255</span>/255, alpha: 1.0)</div>
+<div class="alert" style="margin-left: 80px;">
+	let SECOND_COLOR = UIColor(red: <span style="color: #ff0000;">246</span>/255, green: <span style="color: #ff0000;">210</span>/255, blue: <span style="color: #ff0000;">88</span>/255, alpha: 1.0)</div>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<ul>
+	<li>
+		<h5>
+			<strong>WIZARD TEXT FOR PAGES</strong></h5>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 40px;">
+	You can change the text of each page of the Wizard screen by editing these strings:</p>
+<div class="alert" style="padding-left: 60px; margin-left: 80px;">
+	let wizardLabels = [<br>
+	<br>
+	&nbsp; &nbsp;&quot;SHARE YOUR AD EASILY\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.&quot;,<br>
+	<br>
+	&nbsp; &nbsp;&quot;VIEW ADS BY CATEGORIES\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. &quot;,&nbsp; &nbsp;<br>
+	<br>
+	&nbsp; &nbsp;&quot;CHAT WITH OTHER USERS\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. &quot;,<br>
+	<br>
+	]</div>
+<h5 style="margin-left: 80px;">
+	&nbsp;</h5>
+<h5 style="margin-left: 80px;">
+	&nbsp;</h5>
+<ul>
+	<li>
+		<h5>
+			<strong>REPORT ADS A</strong><strong>ND</strong><strong> USER MESSAGES</strong></h5>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 40px;">
+	You can edit the reporting messages for users and Ads y editing the strings in these arrays:</p>
+<div class="alert" style="margin-left: 80px;">
+	<span style="color: rgb(51, 153, 102);">// YOU CAN CHANGE THE AD REPORT OPTIONS BELOW AS YOU WISH</span><br>
+	<br>
+	let reportAdOptions = [<br>
+	<br>
+	&nbsp; &nbsp;&quot;Prohibited item&quot;,&nbsp;<br>
+	&nbsp; &nbsp;&quot;Conterfeit&quot;,<br>
+	&nbsp; &nbsp; &quot;Wrong category&quot;,<br>
+	&nbsp; &nbsp; &quot;Keyword spam&quot;,<br>
+	&nbsp; &nbsp; &quot;Repeated post&quot;,<br>
+	&nbsp; &nbsp; &quot;Nudity/pornography/mature content&quot;,<br>
+	&nbsp; &nbsp; &quot;Hateful speech/blackmail&quot;,<br>
+	]<br>
+	<br>
+	<span style="color: rgb(51, 153, 102);">// YOU CAN CHANGE THE USER REPORT OPTIONS BELOW AS YOU WISH</span><br>
+	<br>
+	let reportUserOptions = [<br>
+	&nbsp; &nbsp;&quot;Selling counterfeit items&quot;,<br>
+	&nbsp; &nbsp; &quot;Selling prohibited items&quot;,<br>
+	&nbsp; &nbsp; &quot;Items wrongly categorized&quot;,<br>
+	&nbsp; &nbsp; &quot;Nudity/pornography/mature content&quot;,<br>
+	&nbsp; &nbsp; &quot;Keyword spammer&quot;,<br>
+	&nbsp; &nbsp; &quot;Hateful speech/blackmail&quot;,<br>
+	&nbsp; &nbsp; &quot;Suspected fraudster&quot;,<br>
+	&nbsp; &nbsp; &quot;No-show on meetup&quot;,<br>
+	&nbsp; &nbsp; &quot;Backed out of deal&quot;,<br>
+	&nbsp; &nbsp; &quot;Touting&quot;,<br>
+	&nbsp; &nbsp; &quot;Spamming&quot;,<br>
+	]</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="parse_database_setup">
+	<div class="page-header"><h3>Parse Database Setup</h3><hr class="notop"></div>
+<ul>
+	<li>
+		<h6>
+			<strong>CREATE BACK4APP ACCOUNT</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	Before using the app, you must <span style="color: #ff0000;">create your own App</span> on your&nbsp;<span style="color: #ff00ff;"><a href="https://dashboard.back4app.com/apps" rel="noopener" style="color: #ff00ff;" target="_blank"><strong>Back4app Dashboard</strong></a></span>. The link we&rsquo;ve provided above points already to the back4app&#39;s Dashboard, but in case you don&rsquo;t have an account on back4app.com yet, you&rsquo;ll be redirected to the Sign Up page.&nbsp;</p>
+<p style="margin-left: 80px;">
+	Once you&rsquo;ll be signed in on back4app, <span style="color: #ff0000;">enter your Dashboard</span> and simply click on the&nbsp;<span style="color: #ff0000;">Build new app&nbsp;</span>button, give your app a name and a brief description (optional), click&nbsp;<span style="color: #ff0000;">Next</span>&nbsp;and you&rsquo;ll be redirected to the settings page.&nbsp;</p>
+<p style="margin-left: 200px;">
+	<img alt="" class="aligncenter wp-image-931 size-full" height="324" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/build-new-app.jpg" width="621"></p>
+<p style="margin-left: 80px;">
+	Click on&nbsp;<span style="color: #ff0000;">SETTINGS</span>&nbsp;in the&nbsp;<span style="color: #ff0000;">Core Settings&nbsp;box</span>, copy the&nbsp;<span style="color: #ff0000;">App ID</span>&nbsp;and&nbsp;<span style="color: #ff0000;">Client Key</span>&nbsp;strings and replace the existing ones into&nbsp;<span style="color: #ff0000;">Configs.swift</span></p>
+<p style="margin-left: 240px;">
+	<img alt="" class="aligncenter wp-image-932 " height="861" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/appclientkey.jpg" width="532"></p>
+<p style="text-align: center;">
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	Strings to replace in the&nbsp;<span style="color: #ff0000;">API</span>&nbsp;file in the app&#39;s project:</p>
+<div class="alert" style="margin-left: 80px;">
+	let PARSE_APP_ID = &quot;QHHo02vFWw7QbArlVvh8S435O0QLcOz1kJD5s3D4&quot;<br>
+	<br>
+	let PARSE_CLIENT_KEY = &quot;o0Du2CdgBhkOQBdf28IS60PLvFObBLEI2Y3zbPhh&quot;</div>
+<h5>
+	&nbsp;</h5>
+<ul>
+	<li>
+		<h6>
+			<strong>IMPORT CATEGORIES</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	Now you must create a new Class in your Parse Dashboard called&nbsp;<span style="color: #ff0000;">Categories</span>&nbsp;and import the&nbsp;<span style="color: #ff0000;">Categories.json</span>&nbsp;file&nbsp;included in the package as it follows:&nbsp;</p>
+<p style="margin-left: 80px;">
+	1. Enter your Parse Dashboard and click the&nbsp;<span style="color: #ff0000;">Create a class</span>&nbsp;button</p>
+<p style="margin-left: 80px;">
+	2. In the popup window, choose&nbsp;<span style="color: #ff0000;">Custom</span>&nbsp;and type&nbsp;<span style="color: #ff0000;">Categories&nbsp;</span><span style="color: #000000;">(NO other words, just&nbsp;Categories)</span>, then click&nbsp;<span style="color: #ff0000;">Create class</span></p>
+<p style="margin-left: 160px;">
+	<br>
+	<br>
+	<img alt="" class="aligncenter wp-image-934 " height="383" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/addclass.jpg" width="731"></p>
+<p style="margin-left: 80px;">
+	3. Now click on&nbsp;<span style="color: #ff0000;">Edit -&gt; Import</span> data and upload the&nbsp;<span style="color: #ff0000;">Categories.json</span> file included in the package:</p>
+<p style="margin-left: 80px;">
+	4. Lastly, refresh your browser and click on&nbsp;<span style="color: #ff0000;">Categories</span> class to see its data.</p>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		<h6>
+			<span style="color: #ff0000;"><span style="color: #333333;"><strong>IMPORT CITIES</strong></span></span></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	<span style="color: #ff0000;"><span style="color: #333333;">Now you should <span style="color: #ff0000;">repeat</span> them for <span style="color: #ff0000;">Cities.json</span></span></span></p>
+<p style="margin-left: 80px;">
+	1. Enter your Parse Dashboard and click the&nbsp;<span style="color: #ff0000;">Create a class</span>&nbsp;button&nbsp;</p>
+<p style="margin-left: 80px;">
+	2. In the popup window, choose&nbsp;<span style="color: #ff0000;">Custom</span>&nbsp;and type&nbsp;<span style="color: #ff0000;">Cities&nbsp;</span><span style="color: #000000;">(NO other words, just&nbsp;Cities)</span>, then click&nbsp;<span style="color: #ff0000;">Create class</span></p>
+<p style="margin-left: 80px;">
+	3. Now click on&nbsp;<span style="color: #ff0000;">Edit -&gt; Import</span> data and upload the&nbsp;<span style="color: #ff0000;">Cities.json</span> file included in the package:&nbsp;</p>
+<p style="margin-left: 80px;">
+	4. Lastly, refresh your browser and click on&nbsp;<span style="color: #ff0000;">Cities</span> class to see its data.</p>
+<p style="text-align: center;">
+	<span style="color: #339966;">You can start testing the app now :)</span></p>
+<h5>
+	&nbsp;</h5>
+<div class="alert alert-error" style="margin-left: 80px;">
+	<em><strong>IMPORTANT</strong><br>
+	<br>
+	DO NOT run the app before doing the steps above, otherwise the app won&rsquo;t display anything in the Home screen.<br>
+	<br>
+	Please note that those are just demo contents, you can edit their names and you absolutely have to replace the images in your Parse Dashboard with your own ones, because the demo images incuded in the Categories.json&nbsp;file will not be displayed in the app since they&rsquo;re stored into my own Parse demo container.</em></div>
+<h6>
+	&nbsp;</h6>
+<ul>
+	<li>
+		<h6>
+			<strong>REPORTED ADS AND USERS</strong></h6>
+	</li>
+</ul>
+<p style="padding-left: 30px; margin-left: 40px;">
+	Please also note that users can instantly report offensive/inappropriate ads and users, so you should daily or weekly check your Parse Dashboard for reported ads or Users and take action for them, you can check the&nbsp;<span style="color: #ff0000;">isReported</span>&nbsp;and&nbsp;<span style="color: #ff0000;">reportMessage</span>&nbsp;columns of the&nbsp;<span style="color: #ff0000;">Ads</span>&nbsp;and&nbsp;<span style="color: #ff0000;">User</span>&nbsp;classes.</p>
+<h5>
+	&nbsp;</h5>
+<ul>
+	<li>
+		<h6>
+			<strong>VERIFICATION EMAIL SETUP</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	This app automatically sends an email to new users who signed up by email (not by Facebook). That email contains a link to verify your email address, so if you&rsquo;ll create some test users with fake email addresses, you&rsquo;ll never be able to test this feature. We suggest you to create at least user with your own email.</p>
+<p style="margin-left: 80px;">
+	So enter your dashboard on back4app, click&nbsp;<span style="color: #ff0000;">Server Settings</span>&nbsp;in the box of your App and scroll down to Verification e-mails box.<br>
+	Click&nbsp;<span style="color: #ff0000;">SETTINGS</span>&nbsp;to enter it:&nbsp;</p>
+<p style="margin-left: 360px;">
+	<img alt="" class="aligncenter wp-image-945 size-full" height="342" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/verificationemails.jpg" width="348"></p>
+<p style="margin-left: 80px;">
+	You can change the&nbsp;<span style="color: #ff0000;">Reply-to Address</span>&nbsp;as you wish, as well as the&nbsp;<span style="color: #ff0000;">Display Name</span>.<br>
+	Then enable&nbsp;<span style="color: #ff0000;">Verify User Emails</span>, and you&rsquo;ll be all set:&nbsp;</p>
+<p style="margin-left: 160px;">
+	<img alt="" class="aligncenter wp-image-946 size-full" height="581" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/verificationemails2.jpg" width="699"></p>
+</section>
+<section id="facebook_login_setup">
+	<div class="page-header"><h3>Facebook Login Setup</h3><hr class="notop"></div>
+<p style="margin-left: 40px;">
+	1. Create your own Facebook App here:&nbsp;<a href="https://developers.facebook.com/apps/" rel="noopener" target="_blank"><strong><span style="color: #ff00ff;">Facebook developer</span> <span style="color: #ff00ff;">console</span></strong></a></p>
+<p style="margin-left: 40px;">
+	<span style="color: #333333;">2. Open</span> your&nbsp;<a href="https://developers.facebook.com/apps" rel="noopener" target="_blank"><strong><span style="color: #ff00ff;">Facebook App Dashboard</span>&nbsp;</strong></a>and select your application.</p>
+<p style="margin-left: 40px;">
+	3. Select&nbsp;<span style="color: #ff0000;">Settings&nbsp;</span>from the left navigation.</p>
+<p style="margin-left: 40px;">
+	4. Click&nbsp;<span style="color: #ff0000;">Add Platform</span>&nbsp;at the bottom of the page and select&nbsp;<span style="color: #ff0000;">iOS</span>.</p>
+<p style="margin-left: 40px;">
+	5. Locate your <span style="color: #ff0000;">Bundle Identifier</span> in Xcode and copy it to your clipboard.</p>
+<p style="margin-left: 40px;">
+	6. Return to the&nbsp;<span style="color: #ff0000;">App Dashboard</span>&nbsp;and paste your&nbsp;Bundle Identifier&nbsp;into the&nbsp;<span style="color: #ff0000;">Bundle ID</span>&nbsp;field.</p>
+<p style="margin-left: 40px;">
+	7. Enable&nbsp;<span style="color: #ff0000;">Single Sign On</span>.</p>
+<p style="margin-left: 40px;">
+	8. Click&nbsp;<span style="color: #ff0000;">Save Changes</span>&nbsp;at the bottom of the App Dashboard window.</p>
+<p style="margin-left: 80px;">
+	<img alt="" class="aligncenter wp-image-949 size-full" height="625" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/ios-facebook-login.jpg" width="834"></p>
+<p style="margin-left: 40px;">
+	9. Enter your app&nbsp;<span style="color: #ff0000;">Server Settings&nbsp;</span>on back4app, scroll down to the&nbsp;<span style="color: #ff0000;">Facebook Login&nbsp;</span>section and click&nbsp;<span style="color: #ff0000;">SETTINGS</span></p>
+<p style="margin-left: 320px;">
+	<img alt="" class="aligncenter wp-image-950 size-full" height="314" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/server-settings.jpg" width="338"></p>
+<p style="margin-left: 40px;">
+	10. Paste your&nbsp;<span style="color: #ff0000;">Facebook App ID</span> in the empty filed and click the&nbsp;<strong>+&nbsp;</strong>button, then&nbsp;<span style="color: #ff0000;">SAVE</span></p>
+<p style="margin-left: 240px;">
+	<img alt="" class="aligncenter wp-image-951 size-full" height="385" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/facebook-login-save.jpg" width="533"></p>
+<p style="margin-left: 40px;">
+	11. Go in Xcode, enter&nbsp;<span style="color: #ff0000;">Info.plist</span>, expand the&nbsp;<span style="color: #ff0000;">URL types</span> row as shown below, paste your Facebook App Id with&nbsp;<span style="color: #ff0000;">fb&nbsp;</span>prefix in the&nbsp;<span style="color: #ff0000;">Item 0</span>&nbsp;row, your Facebook App Id without&nbsp;<span style="color: #ff0000;">fb&nbsp;</span>in the&nbsp;<span style="color: #ff0000;">FacebookAppID</span>&nbsp;row and type the name of your app in the&nbsp;<span style="color: #ff0000;">FacebookDisplayName</span>&nbsp;row.</p>
+<p style="margin-left: 120px;">
+	<img alt="" class="aligncenter wp-image-952 size-full" height="274" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/facebook-login-infoplist.jpg" width="774"></p>
+<p style="margin-left: 40px;">
+	12. Lastly, enter&nbsp;<span style="color: #ff0000;">App Review&nbsp;</span>and make your app public:&nbsp;</p>
+<p style="text-align: center; margin-left: 40px;">
+	<img alt="" class="aligncenter wp-image-956 " height="169" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/fblogin2-300x75.png" width="489"></p>
+<p style="text-align: center;">
+	<span style="color: #339966;">You&rsquo;re done with setting up Facebook Login in this app, now you can test it.&nbsp;</span></p>
+</section>
+<section id="push_notifications_setup_part_1">
+	<div class="page-header"><h3>Push Notifications Setup - Part 1</h3><hr class="notop"></div>
+<p>
+	&nbsp;</p>
+<p>
+	Apple Push Notification Service&nbsp;(commonly referred to as&nbsp;Apple Notification Service&nbsp;or&nbsp;APNS) is a platform service created by&nbsp;<a href="https://en.wikipedia.org/wiki/Apple_Inc."><strong>Apple Inc</strong>.</a>&nbsp;that enables third party application developers to send push notifications to iOS users. You must havePaid Apple Developer account&nbsp;to create certificates. Below are the steps to create&nbsp;.p12 certificate&nbsp;require to send push notification.</p>
+<ul>
+	<li>
+		<h6>
+			<strong>Create an App ID</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	1. Login to&nbsp;<a href="https://developer.apple.com/"><strong>Apple developer account</strong>&nbsp;</a>and click&nbsp;Certificates, Identifiers and Profiles</p>
+<p>
+	<img alt="" class="aligncenter wp-image-980 " height="304" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push1.png" width="614"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	2. Select <span style="color: #ff0000;">Identifiers</span> from sidebar</p>
+<p>
+	<img alt="" class="aligncenter wp-image-981 " src="http://carboncodetechnology.com/wp-content/uploads/2019/07/generate1.png" style="width: 648px; height: 300px;"></p>
+<p style="margin-left: 80px;">
+	<br>
+	3. Select <span style="color: #ff0000;">App IDs</span> from menu and Continue</p>
+<p>
+	<img alt="" class="aligncenter wp-image-982 " height="342" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/generate2.png" width="728"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	4. Type Description, Select&nbsp;<span style="color: #ff0000;">Explicit</span>, Type&nbsp;<span style="color: #ff0000;">Bundle ID&nbsp;</span>and select&nbsp;<span style="color: #ff0000;">Push Notifications</span>,&nbsp;then&nbsp;<span style="color: #ff0000;">Continue</span> and <span style="color: #ff0000;">Register</span></p>
+<p>
+	<img alt="" class="aligncenter wp-image-983 " src="http://carboncodetechnology.com/wp-content/uploads/2019/07/generate3.png" style="width: 575px; height: 1100px;"></p>
+<div class="alert alert-error" style="margin-left: 80px;">
+	<em><strong>IMPORTANT :</strong><br>
+	<br>
+	To create an explicit App ID, type a unique string in the Bundle ID&nbsp;field.&nbsp;<br>
+	<br>
+	Please note that this Bundle ID must match the Bundle Identifier of your app that you set in the General tab in Xcode.</em></div>
+<div class="alert alert-error" style="margin-left: 80px;">
+	<img alt="" class="aligncenter wp-image-1008 size-full" height="110" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store6.jpg" width="496"></div>
+<ul>
+	<li>
+		<h6>
+			<strong>Generate a Certificate from Keychain Access</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	1. Launch the&nbsp;<span style="color: #ff0000;">Keychain Access</span> <span style="color: #ff0000;">application in your Mac OS</span> X and Select&nbsp;Keychain Access -&gt; Certificate Assistant -&gt; Request a Certificate From a Certificate Authority</p>
+<p>
+	<img alt="" class="aligncenter wp-image-986 size-full" height="437" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push7.png" width="700"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	2. Enter&nbsp;email address and check the &lsquo;<span style="color: #ff0000;">Saved to disk</span>&rsquo; option, then click&nbsp;Continue</p>
+<p>
+	<img alt="" class="aligncenter wp-image-987 size-full" height="437" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push8.png" width="700"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	3. <span style="color: #ff0000;">Save</span> certificate</p>
+<p>
+	<img alt="" class="aligncenter wp-image-988 size-full" height="437" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push9.png" width="700"></p>
+<h5>
+	&nbsp;</h5>
+<ul>
+	<li>
+		<h6>
+			<strong>Generate Development Certificate</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	1. Go back to developer account and <span style="color: #ff0000;">select your new app</span> from Identifiers and click</p>
+<p>
+	<img alt="" class="aligncenter" height="383" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/generate4.png" width="674"></p>
+<p>
+	&nbsp;</p>
+<div>
+	<p style="margin-left: 80px;">
+		2.&nbsp;Now, <span style="color: #ff0000;">scroll down to push notifications</span> section and click <span style="color: #ff0000;">configure</span></p>
+</div>
+<p>
+	<img alt="" class="aligncenter wp-image-990 " src="http://carboncodetechnology.com/wp-content/uploads/2019/07/generate5.png" style="width: 450px; height: 350px;"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	3. Click to Create Certificate Button in&nbsp;<span style="color: #ff0000;">Development SSL Certificate</span></p>
+<div>
+	<img alt="" class="aligncenter" height="383" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/generate6-e1563887757757.png" width="844"></div>
+<div>
+	&nbsp;</div>
+<p style="margin-left: 80px;">
+	4.&nbsp;<span style="color: #ff0000;">Choose certificate file</span> created from <span style="color: #ff0000;">Keychain Access</span> in previous section and click&nbsp;Continue</p>
+<p>
+	<img alt="" class="aligncenter wp-image-991 " height="394" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/generate7-e1563887793921.png" width="800"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	5. <span style="color: #ff0000;">Download Development Certificate</span> and click&nbsp;Done.</p>
+<p>
+	<img alt="" class="aligncenter wp-image-993 " height="349" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push14-e1563888334695.png" width="482"></p>
+<ul>
+	<li>
+		<h6>
+			<strong>Generate Production Certificate</strong></h6>
+	</li>
+</ul>
+<div>
+	<div style="margin-left: 80px;">
+		The&nbsp;<span style="color: #ff0000;">only difference</span>&nbsp;between generating development and production certificates is in&nbsp;<span style="color: #ff0000;">2nd picture&nbsp;in&nbsp;Generate Development Certificate</span> Section.<br>
+		<br>
+		Now you will <span style="color: #ff0000;">choose</span>&nbsp;<span style="color: #ff0000;">Production SSL Certificate</span>&nbsp;instead of Development SSL Certificate</div>
+	<div style="margin-left: 80px;">
+		&nbsp;</div>
+	<div style="margin-left: 80px;">
+		1. Now you can repeat 5 steps mentioned above (<em>Generate Development Certificate</em>)</div>
+	<div style="margin-left: 80px;">
+		2. After <span style="color: #ff0000;">download Production Certificate</span> and click&nbsp;Done&nbsp;to finish process.</div>
+</div>
+<ul>
+	<li>
+		<h6>
+			<strong>Generate Development .p12 certificates</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	1. Firstly, <span style="color: #ff0000;">double click Development certificate</span> generated in previous step to add it to Keychain Access. Go to&nbsp;<span style="color: #ff0000;">Keychain Access</span>,&nbsp;select&nbsp;login&nbsp;keychain and&nbsp;My&nbsp;Certificate&nbsp;from side menu. Find app certificate and&nbsp;right click to export it</p>
+<p>
+	<img alt="" class="aligncenter wp-image-994 size-full" height="437" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push15.png" width="700"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	2. Enter certificate name and click&nbsp;<span style="color: #ff0000;">Save</span></p>
+<p>
+	<img alt="" class="aligncenter wp-image-995 size-full" height="437" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push16.png" width="700"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	3. A&nbsp;<span style="color: #ff0000;">popup</span> will ask you to add a Password, <span style="color: #ff0000;">DO NOT</span> do that, it&#39;s not needed.</p>
+<p>
+	<img alt="" class="aligncenter wp-image-996 size-full" height="437" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push17.png" width="700"></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left: 80px;">
+	4. Enter your&nbsp;<span style="color: #ff0000;">computer admin password</span> to finish the process</p>
+<p>
+	<img alt="" class="aligncenter wp-image-997 size-full" height="437" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/push18.png" width="700"></p>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		<h6>
+			<strong>Generate Production .p12 certificate</strong></h6>
+	</li>
+</ul>
+<p style="margin-left: 80px;">
+	<span style="color: #ff0000;">Repeat 4 steps</span> mentioned above (Generate Development .p12 Certificate). The <span style="color: #ff0000;">only difference</span>, these steps will be about <span style="color: #ff0000;">Production Certificate</span>.&nbsp;</p>
+<p style="margin-left: 80px;">
+	1. This time,&nbsp;<span style="color: #ff0000;">double click Production certificate</span> generated in previous step to add it to Keychain Access. Go to&nbsp;<span style="color: #ff0000;">Keychain Access</span>,&nbsp;select&nbsp;login&nbsp;keychain and&nbsp;My&nbsp;Certificate&nbsp;from side menu. Find app certificate and&nbsp;right click to export it</p>
+<p style="margin-left: 80px;">
+	2.&nbsp;Enter certificate name and click&nbsp;<span style="color: #ff0000;">Save</span></p>
+<p style="margin-left: 80px;">
+	3.&nbsp;A&nbsp;<span style="color: #ff0000;">popup</span> will ask you to add a Password, <span style="color: #ff0000;">DO NOT</span> do that, it&#39;s not needed.</p>
+<p style="margin-left: 80px;">
+	4.&nbsp;Enter your&nbsp;<span style="color: #ff0000;">computer admin password</span> to finish the process.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="push_notifications_setup_part_2">
+	<div class="page-header"><h3>Push Notifications Setup - Part 2</h3><hr class="notop"></div>
+<h4 id="push_notifications_setup_part_2__nbsp">&nbsp;</h4>
+<p style="margin-left: 40px;">
+	Once you&#39;ve generated your .p12 files, save them on the Desktop.&nbsp;Open your App&rsquo;s dashboard on back4app, scroll down to&nbsp;<span style="color: #ff0000;">iOS Push Notifications&nbsp;</span>box and click&nbsp;<span style="color: #ff0000;">SETTINGS</span></p>
+<p style="margin-left: 240px;">
+	<img alt="" class="alignnone wp-image-959 size-full" height="345" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/ios-push-settings1.jpg" width="391"></p>
+<p style="margin-left: 40px;">
+	Click&nbsp;<span style="color: #ff0000;">Choose file&nbsp;</span>to upload both your&nbsp;<span style="color: #ff0000;">.p12&nbsp;</span>certificates. Please note that you must upload them one by one, so upload your Development certificate first and click&nbsp;<span style="color: #ff0000;">SEND</span>, then upload the Production certificate and click&nbsp;<span style="color: #ff0000;">SEND</span>&nbsp;again.&nbsp;<br>
+	Once you&#39;re done, click BACK to go back to your app&#39;s dashboard.&nbsp;</p>
+<p style="margin-left: 160px;">
+	<img alt="" class="alignnone wp-image-960 size-full" height="421" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/ios-push-settings2.jpg" width="588"></p>
+<p style="margin-left: 40px;">
+	Look for the&nbsp;<span style="color: #ff0000;">Cloud Code&nbsp;</span>box in your app&#39;s dashboard, click&nbsp;<span style="color: #ff0000;">SETTINGS&nbsp;</span>to enter it, then click&nbsp;<span style="color: #ff0000;">Choose file</span>&nbsp;to upload the&nbsp;<span style="color: #ff0000;">main.js</span>&nbsp;file included in the package of this app into CloudCode.<br>
+	Lastly, click&nbsp;<span style="color: #ff0000;">SAVE</span></p>
+<p style="text-align: center; margin-left: 80px;">
+	<img alt="" class="aligncenter wp-image-961 size-full" height="339" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/mainjs1.jpg" width="357"></p>
+<p style="margin-left: 120px;">
+	<img alt="" class="aligncenter wp-image-962 size-large" height="356" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/mainjs2-1024x486.jpg" width="750"></p>
+<p style="text-align: center;">
+	<span style="color: #339966;">You&rsquo;re done with setting up your app to send/receive Push Notifications!&nbsp;</span></p>
+</section>
+<section id="admob_banners_setup">
+	<div class="page-header"><h3>AdMob Banners Setup</h3><hr class="notop"></div>
+<p>
+	In order for you to display your own AdMob Banners you must create a&nbsp;<span style="color: #ff0000;">Banner AD UNIT ID&nbsp;</span>on&nbsp;<strong><span style="color: #ff00ff;"><a href="https://apps.admob.com/v2/home" rel="noopener" style="color: #ff00ff;" target="_blank">the AdMob website</a></span></strong>.<br>
+	Once you&rsquo;ve got your Unit ID, replace the&nbsp;<span style="color: red;">red</span>&nbsp;string below with your <span style="color: #ff0000;">AD UNIT ID</span> in <span style="color: #ff0000;">Configs.swift</span></p>
+<div class="alert">
+	let ADMOB_BANNER_UNIT_ID = &quot;<span style="color: red;">ca-app-pub-9733347540588953/7805958028</span>&quot;</div>
+<h6>
+	<strong>APPLE REVIEW PROCESS</strong></h6>
+<p>
+	Sometimes it may happen that an app gets rejected once by Apple reviewers because of ads, that&rsquo;s an issue we encountered too and we can&rsquo;t still understand why since we then re-submitted an app without any change and it got approved, and lots of developers are angry about it as well.<br>
+	Anyway, check out the screenshot below, you&rsquo;ll get it after clicking on Submit For Review button on iTunes Connect, check the options shown below and everything should go smoothly.<br>
+	If your app will get rejected once because of IDFA issue, don&rsquo;t get mad, just resubmit a new binary to iTunes Connect via XCode and make sure to check the options below:&nbsp;</p>
+<p>
+	<img alt="" class="aligncenter wp-image-968 size-full" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/idfa.png"  ></p>
+<p class="small">
+	&nbsp;</p>
+</section>
+<section id="how_to_publish_the_app_to_app_store">
+	<div class="page-header"><h3>How to Publish the App to App Store</h3><hr class="notop"></div>
+<div class="full module moduleText" id="mod_44054128">
+	<h6 class="subtitle">
+		<strong>CREATE AN APP ID</strong></h6>
+	<div class="txtd" id="txtd_44054128">
+		<p>
+			The very first thing to do is to create your own App ID on the Apple developer page - We assume you already have enrolled a paid iOS Development Program that allows you to publish apps on the App Store, but in case you don&#39;t have it yet, enroll it right away before keep reading this article, it costs $99/year and you can find info here: <strong><span style="color: #ff00ff;"><a href="https://developer.apple.com/programs/enroll/" rel="nofollow" style="color: #ff00ff;">Enroll Programs</a></span></strong></p>
+		<p>
+			You created your own App ID above steps mentioned in Push Notifications Part-1.</p>
+	</div>
+</div>
+<div class="full module moduleText" id="mod_44054136">
+	<div class="txtd" id="txtd_44054136">
+		<div class="full module moduleAdSpot mobileAd" id="mod_new33">
+			<div class="ad-wrapper">
+				<div>
+					<div class="resp-ad" data-appnexus="in_content_mw" data-breakpoint="Mobile" data-height="250" data-ix="372759" data-load-async="true" data-mantis="5bb3ada3583864019708be70,mobile_in_content_3" data-medianet="884765384" data-onedisplay="5012141" data-openx="540255506" data-pubmatic="HubPages_Mobile_300x250_InContent_3@300x250" data-rhythmone="79381" data-rubicon="249958,1238850" data-sizes="[[300,250],[0,0]]" data-slot="hubpages.com/technology" data-slot-targeting="{" data-sortable="mobile_in_content_3" data-sovrn="580523" data-width="300" id="div-gpt-ad-ArticleMobileInContent3">
+						&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="full module moduleText" id="mod_44054140">
+			<h6 class="subtitle">
+				<strong>CREATE YOUR APP ON iTUNES CONNECT</strong></h6>
+			<div class="txtd" id="txtd_44054140">
+				<p>
+					Now you&#39;re ready to create your app on iTunes Connect.</p>
+				<p>
+					Go to <strong><span style="color: #ff00ff;"><a href="https://itunesconnect.apple.com" rel="nofollow" style="color: #ff00ff;">https://itunesconnect.apple.com</a></span></strong>, log in with your Apple ID and password and click the My Apps button.</p>
+				<p>
+					<img alt="" class="aligncenter wp-image-1012 size-full" height="310" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store10.jpg" width="496"></p>
+			</div>
+		</div>
+		<div class="full module moduleText" id="mod_44054142">
+			<div class="txtd" id="txtd_44054142">
+				<p>
+					Right below the iTunes Connect title, on the top-left corner of the screen, click the <strong>+</strong> button and select <span style="color: #ff0000;">New App</span>, which opens a popup window to create iOS and/or tvOS apps</p>
+			</div>
+		</div>
+		<div class="full module moduleText" id="mod_44054144">
+			<div class="txtd" id="txtd_44054144">
+				<p>
+					In this section, select the iOS option and fill the following fields:</p>
+				<p>
+					<strong>Name:</strong> Type the name of your app, which will be displayed on the App Store. Please note that it can&#39;t be longer than 50 characters.</p>
+				<p>
+					<strong>Primary Language</strong>: Select the main language of your app from this list. If localized app information isn&rsquo;t available in an App Store territory, the information from your primary language will be used instead. If you don&rsquo;t see a supported language that you would like to use, you may contact the Apple customer service.</p>
+				<p>
+					<strong>Bundle ID</strong>: Here&#39;s where to select the App ID you&#39;ve previously created, which must match the Bundle Identifier you set in Xcode. It can&#39;t be changed after you upload your first build, so be careful while choosing it.</p>
+				<p>
+					<strong>SKU</strong>: this is a unique ID for your app and it is not visible on the App Store. You can type anything you want, all lowercase letters. I usually type the name of my app with no spaces, just to make sure I&#39;ll make it unique.</p>
+				<p>
+					When you&#39;re done, click the <span style="color: #ff0000;">Create</span> button.</p>
+				<p>
+					<img alt="" class="aligncenter wp-image-1014 size-full" height="321" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store12.png" width="496"></p>
+				<p>
+					&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full module moduleText" id="mod_44054136">
+	<div class="txtd" id="txtd_44054136">
+		<div class="full module moduleText" id="mod_44054146">
+			<h6 class="subtitle">
+				<strong>APP INFORMATION</strong></h6>
+			<div class="txtd" id="txtd_44054146">
+				<p>
+					The first page you get now is the one where you can set all your app&#39;s information such as Name, Subtitle, Privacy Policy link, etc. With the <span style="color: #ff0000;">App Information</span> tab automatically selected you can edit the following options:</p>
+				<p>
+					<strong>Name</strong>: it will show the app name you&#39;ve previously set in the popup window, but you can still change it if you want.</p>
+				<p>
+					<strong>Privacy Policy URL</strong>: this is an optional field, if you have built a privacy policy HTML page on your own server, here&#39;s where you should paste the link to it, otherwise just leave it blank.</p>
+				<p>
+					<strong>Subtitle</strong>: another optional field, although it&#39;s good to type something in it like a summary of your app, It will appear under your app&rsquo;s name on the App Store for customers with devices running iOS 11 or later. This feature wasn;t available prior to iOS 11.</p>
+				<p>
+					Under the <span style="color: #ff0000;">General Information</span> section, you can check your <span style="color: #ff0000;">Bundle ID</span> and select the <span style="color: #ff0000;">Primary</span> and <span style="color: #ff0000;">Secondary</span> categories, the second one is optional but it&#39;s worth setting it as well.</p>
+				<p>
+					By default, the <span style="color: #ff0000;">Licence Agreement </span>option is set to Apple&#39;s Standard License Agreement. Just ignore this since it&#39;s fine.</p>
+				<p>
+					<strong>Rating</strong>: This is not set yet since you will have to edit it later in the <span style="color: #ff0000;">Prepare for Submission</span> section.</p>
+				<p>
+					If you scroll to the bottom of the page you can find the auto-generated link of your app on the App Store - <span style="color: #ff0000;">View on App Store</span>. If you click it, it will open a blank page trying to connect to the iTunes Store, of course, your app isn&#39;t there yet so you can do right-click on the link and copy it for further use - like a promotional coming soon website, or social network shares to let your connections know that you&#39;ll be releasing an app soon.</p>
+				<p>
+					<img alt="" class="aligncenter wp-image-1015 size-full" height="471" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store13.jpg" width="496"></p>
+				<p>
+					&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full module moduleText" id="mod_44054136">
+	<div class="txtd" id="txtd_44054136">
+		<div class="full module moduleText" id="mod_44054148">
+			<h6 class="subtitle">
+				<strong>PRICING AND AVAILABILITY</strong></h6>
+			<div class="txtd" id="txtd_44054148">
+				<p>
+					Once you&#39;re done with the above settings, click <span style="color: #ff0000;">Save</span> and switch to <span style="color: #ff0000;">Pricing and Availability</span> tab.</p>
+				<p>
+					Here you&#39;ll be able to choose the price tier you want for your app, it goes from FREE to $999.99 in the <span style="color: #ff0000;">Price Schedule</span> section. Below this section, you can edit the availability of your app. By default, it&#39;s worldwide, but if you click on the Edit link you can select the country(s) you wish your app to be visible.</p>
+				<p>
+					<strong>Volume Purchase Program</strong>: There are 3 options you may select in this section:</p>
+				<ol>
+					<li>
+						Available with a volume discount for educational institutions</li>
+					<li>
+						Available with no discount</li>
+					<li>
+						Available privately as a custom B2B app</li>
+				</ol>
+				<p>
+					Click on the (?) buttons next to those options to learn what they mean, I won&#39;t get too much into these details since the 99% of developers select the first one due to the fact that they publish their apps for FREE.</p>
+				<p>
+					<strong>Bitcode Auto-Recompilation</strong>: Ignore this section. Expand it to get its details if you want to.</p>
+				<p>
+					<img alt="" class="aligncenter wp-image-1016 size-full" height="388" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store14.jpg" width="496"></p>
+				<p>
+					&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full module moduleText" id="mod_44054136">
+	<div class="txtd" id="txtd_44054136">
+		<div class="full module moduleText" id="mod_44054148">
+			<div class="txtd" id="txtd_44054148">
+				<h6>
+					<strong>PREPARE FOR SUBMISSION</strong></h6>
+			</div>
+		</div>
+		<div class="full module moduleText" id="mod_44054150">
+			<div class="txtd" id="txtd_44054150">
+				<p>
+					In this page, you&#39;ll do most of the job about your app, such as uploading screenshots, writing a description, creating keywords, etc. here are the option</p>
+				<p>
+					<strong>App Previews and Screenshots</strong>: You are allowed to upload up to 3 app video previews and 5 screenshots in this section. Your screenshots must be in the .<em>jpg</em> or .<em>png</em> format, and in the <em>RGB</em> color space. The video previews must be in the .<em>m4v</em>, .<em>mp4</em>, or .mov format and cannot exceed <em>500 MB</em>.</p>
+				<p>
+					You can simply drag your images and videos into the grey section and wait for them to be uploaded to the Apple&#39;s server. the great thing about it is that you can make iPhone 5.5&quot; and iPad 12.9&quot; images and the iTunes Connect website will automatically resize your images to fit all the other devices&#39; screen size.</p>
+				<p>
+					<strong>Promotional text:</strong> This text box is where you can type something to inform your App Store visitors of any current app features without requiring an updated submission. Please note that your text will show up above the main description of your app on the App Store for users with devices running iOS 11 or later.</p>
+				<p>
+					<strong>Keywords: </strong>Insert some keywords in this text field that describe your app. Keywords make App Store search results more accurate. Just remember to separate keywords with a comma, something like photo, pic, social, fun, etc.</p>
+				<p>
+					<strong>Support URL: </strong>Type the URL of your or the landing page of your app. This URL will be visible on the App Store.</p>
+				<p>
+					<strong>Marketing URL</strong>: If you have a webpage with marketing info about your application, type its link in this field. This URL will be visible on the App Store.</p>
+				<p>
+					<strong>Description</strong>: This is the main description field of your app, where you can write about its features and functionality. It will also be used for your Apple Watch app (in case you&#39;ll have it).</p>
+				<p>
+					<strong>iMessage App</strong>: If you offer an iMessage extension app you have to upload up to 5 screenshots about it in this section.</p>
+				<p>
+					<strong>Apple Watch</strong>: If you offer an Apple Watch extension app you have to upload an app icon and up to 5 screenshots about it in this section.</p>
+				<p>
+					<strong>Build</strong>: Here you must select the binary you&#39;ve uploaded via Xcode, as the section says, you can submit builds using Xcode 6 or later, or the Application Loader 3.0 or later. At the present time, I would recommend you to use Xcode 9. We&#39;ll see what you have to do to upload a binary to iTunes Connect later.</p>
+				<p>
+					<img alt="" class="aligncenter wp-image-1017 size-full" height="461" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store15.jpg" width="496"></p>
+				<p>
+					&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full module moduleText" id="mod_44054136">
+	<div class="txtd" id="txtd_44054136">
+		<div class="full module moduleText" id="mod_44054152">
+			<h6 class="subtitle">
+				<strong>GENERAL APP INFORMATION</strong></h6>
+			<div class="txtd" id="txtd_44054152">
+				<p>
+					<strong>App Store icon</strong>: If you have built your app with Xcode 9 or later, you don&#39;t need to upload your 1024x1024px icon image here because the Assets.xcassets folder in Xcode 9 has a spot for such icon too. Please note that your app icon doesn&#39;t have to have round corners nor transparent pixels, and must be in .png format.</p>
+				<p>
+					<strong>Version</strong>: Type the version number of your app you are in this field. Numbering should follow software versioning conventions.</p>
+				<p>
+					<strong>Rating</strong>: Click on Edit and select the level of frequency that best describes your app in the popup window that will show up. The app rating that will display on the App Store is the same across all of your platforms. It is based on the app&rsquo;s platform with the highest rating. When you&#39;re done, click <span style="color: #ff0000;">Done</span>.</p>
+				<p>
+					<strong>Copyright</strong>: In this box, you have to type the name of the person or entity that owns the exclusive rights to your app, preceded by the year the rights were obtained (for example, &quot;2008 Acme Inc.&quot;). Do not provide a URL, just a name, it may be your own company name or just your full name.</p>
+				<p>
+					<strong>Trade Representative Contact Information</strong>: This is only for Korean App Store, you can provide additional information that will be displayed with your app on the Korean App Store, so if you&#39;re not from Korea do not check this option.</p>
+				<p>
+					You must still fill all the fields below with your personal or company&#39;s information.</p>
+				<p>
+					<strong>Routing App Coverage File:</strong> Specify the geographic regions supported by your app. The file must be in the .geojson format and can only contain one multipolygon elements. Anyway, this option is optional and nobody usually fills it, so just ignore it, especially if you&#39;re publishing your app Worldwide.</p>
+				<p>
+					<strong>In-App Purchases</strong>: If your application is offering In-App Purchases, click on the blue + button and select the IAP products you previously created in the <span style="color: #ff0000;">Features/In-App Purchase</span> section (this option will be explained in another tutorial dedicated to iOS IAP).</p>
+				<p>
+					<strong>Game Center</strong>: If your app offers Game Center Leaderboards and/or Achievements, enable this option and add your Leaderboards and Achievements by selecting them in the popup window that will appear by clicking the blue + button.</p>
+				<p>
+					<strong>Multiplayer Compatibility</strong>: If your app offers multiplayer compatibility between other apps, click the blue + button and elect those apps, otherwise just leave it as it is.</p>
+				<p>
+					<strong>Sign-in information</strong>: If your app&#39;s users have to sign in using social media or custom Login/Sign Up controllers, you have to provide information for an account that the reviewer can use to test your application. Credentials must be valid and active for the duration of the review.</p>
+				<p>
+					<strong>Contact information</strong>: Insert the first name, last name, phone number and email of the person in your organization who should be contacted if the App Review team has any questions or needs additional information.</p>
+				<p>
+					<strong>Notes</strong>: This box is where you can type additional information about your app that can help the Apple reviewer during the review process. Include information that may be needed to test your app, such as app-specific settings and features.</p>
+				<p>
+					<strong>Attachment</strong>: This is a useful option, you can attach specific app documentation, demo videos, and other items to help prevent delays during the app review process. Make sure you use files with the following extensions: .pdf, .doc, .docx, .rtf, .pages, .xls, .xlsx, .numbers, .zip, .rar, .plist, .crash, .jpg, .png, .mp4, or .avi.</p>
+				<p>
+					<strong>Version release</strong>: After your app has been approved, Apple reviewers can release it for you immediately. If you want to release the app yourself, choose a date or manually release it at any point after the approval. Choose one of the 3 options offered in this section.</p>
+				<p>
+					<img alt="" class="aligncenter wp-image-1018 size-full" height="613" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store16.jpg" width="496"></p>
+				<p>
+					&nbsp;</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full module moduleText" id="mod_44054136">
+	<div class="txtd" id="txtd_44054136">
+		<div class="full module moduleImage" id="mod_44054153">
+			<figure>
+				<div class="image_wrapper bordered" data-image-id="13737753" data-lightbox-image="https://usercontent2.hubstatic.com/13737753_f1024.jpg" data-mdi-id="11758108" id="slide_img_11758108_13737753">
+					<img alt="Prepare for submission - Additional info" class="lazy" data-height="2450" data-original="https://usercontent2.hubstatic.com/13737753_f496.jpg" data-ratio="1.2367491166078" data-width="1981" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" title="Prepare for submission - Additional info"></div>
+			</figure>
+		</div>
+		<div class="full module moduleText" id="mod_44054154">
+			<h6 class="subtitle">
+				<strong>XCODE ARCHIVE AND UPLOAD TO THE APP STORE</strong></h6>
+			<div class="txtd" id="txtd_44054154">
+				<p>
+					You&#39;re almost done, the last thing you have to do now is to Archive your application with Xcode 9 or later and upload its build to the App Store through the Organizer.</p>
+				<p>
+					With your app project opened in Xcode, click on <span style="color: #ff0000;">Product -&gt; Archive</span> and wait for the software to create an archive of your application.</p>
+			</div>
+			<p>
+				<img alt="" class="aligncenter wp-image-1019 size-full" height="310" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store17.jpg" width="496"></p>
+		</div>
+		<div class="full module moduleText" id="mod_44054156">
+			<div class="txtd" id="txtd_44054156">
+				<p>
+					Once the Organizer window shows up, you just have to click on <span style="color: #ff0000;">Upload to App Store</span> and wait for your binary to get successfully submitted to the Apple&#39;s servers. You&#39;ll get an alert when the upload is done, then close the Organizer and go back to iTunes Connect, the <span style="color: #ff0000;">Build</span> section.</p>
+				<p>
+					<img alt="" class="aligncenter wp-image-1020 size-full" height="275" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store18.jpg" width="496"></p>
+			</div>
+		</div>
+		<div class="full module moduleText" id="mod_44054158">
+			<div class="txtd" id="txtd_44054158">
+				<p>
+					Wait for an email from Apple that will notify you when your binary is ready to be added to the <span style="color: #ff0000;">Build</span> section of your app&#39;s page on iTunes Connect. Enter such section then, click the blue + button next to <span style="color: #ff0000;">Build</span><strong>, </strong>select your binary and click <span style="color: #ff0000;">Done</span>.</p>
+			</div>
+		</div>
+		<div class="full module moduleImage" id="mod_44054159">
+			<figure>
+				<div class="image_wrapper bordered" data-image-id="13737815" data-mdi-id="11758111" id="slide_img_11758111_13737815">
+					<img alt="Add your build" class="lazy" data-height="240" data-original="https://usercontent2.hubstatic.com/13737815_f496.jpg" data-ratio="0.35294117647059" data-width="680" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" title="Add your build"><img alt="" class="aligncenter wp-image-1002 size-full" height="175" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store1.jpg" width="496"></div>
+				<div data-image-id="13737815" data-mdi-id="11758111">
+					<img alt="" class="aligncenter wp-image-1013 size-full" height="197" src="http://carboncodetechnology.com/wp-content/uploads/2019/07/store11.jpg" width="496"></div>
+			</figure>
+		</div>
+		<div class="full module moduleText" id="mod_44054160">
+			<div class="txtd" id="txtd_44054160">
+				<p>
+					At this point click on Submit for Review button on the top-right corner of the screen, answer a few final questions and you&#39;ll be done with submitting your application to the App Store.</p>
+				<p>
+					It usually takes up to 3-4 days to a reviewer o approve or reject your app, in case of rejection you&#39;ll get a message in the <span style="color: #ff0000;">Resolution Center</span>, where you&#39;ll be able to reply to the reviewer to discuss issues on your binary (if any, of course).</p>
+				<p>
+					If you carefully tested your app before submitting it to for review you shouldn&#39;t get a rejection, but please note that lately, Apple hired bad reviewers who reject apps for insignificant reasons. In this case, don&#39;t get discouraged, just keep pushing ;)</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full module moduleText" id="mod_44054160">
+	<div class="txtd" id="txtd_44054160">
+		&nbsp;</div>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="app_rating">
+	<div class="page-header"><h3>App Rating</h3><hr class="notop"></div>
+<p>
+	<span style="color: #ff0000;">Your opinions are very valuable for us</span>.&nbsp;If you like our app, please don&rsquo;t forget to <a href="https://codecanyon.net/user/carboncodetechnology"><strong><span style="color: #ff00ff;">rate Classifier</span></strong></a>&nbsp;on CodeCanyon!&nbsp;<img alt="smiley" height="20" src="assets/images/image_46.gif" title="smiley" width="20"></p>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright CarbonCode Technology 2019 made with the <a href="https://evp.to/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container -->
+
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+<script src="assets/js/bootstrap-min.js"></script>
+</body>
+</html>

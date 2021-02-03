@@ -1,0 +1,93 @@
+{
+"results" : [
+
+  {
+    "objectId": "2LL0JMNPGa",
+    "category": "Real Estate",
+    "createdAt": "2019-07-13T14:58:08.593Z",
+    "updatedAt": "2019-07-13T14:58:38.950Z",
+    "image": {
+      "__type": "File",
+      "name": "c7e9c08bae462f0d634111d8d4f66b4c_classifier-real-estate.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/c7e9c08bae462f0d634111d8d4f66b4c_classifier-real-estate.jpg"
+    }
+  },
+  {
+    "objectId": "V3DLOSezfE",
+    "category": "Cars",
+    "createdAt": "2019-07-13T14:58:34.594Z",
+    "updatedAt": "2019-07-13T14:59:08.202Z",
+    "image": {
+      "__type": "File",
+      "name": "5200c96c1971d67660d968ea30e48f57_classifier-cars.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/5200c96c1971d67660d968ea30e48f57_classifier-cars.jpg"
+    }
+  },
+  {
+    "objectId": "LYwxKBWF3B",
+    "category": "Clothing",
+    "createdAt": "2019-07-13T14:58:43.182Z",
+    "updatedAt": "2019-07-13T15:00:15.854Z",
+    "image": {
+      "__type": "File",
+      "name": "3bfa53ae680386f91af355ecf390016c_classifier-clothing.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/3bfa53ae680386f91af355ecf390016c_classifier-clothing.jpg"
+    }
+  },
+  {
+    "objectId": "ZywikrhGbs",
+    "category": "Accessories",
+    "createdAt": "2019-07-13T15:00:00.854Z",
+    "updatedAt": "2019-07-13T15:00:31.477Z",
+    "image": {
+      "__type": "File",
+      "name": "46c2620f6c97a9367a7ebdc9e4096748_classifier-accessories.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/46c2620f6c97a9367a7ebdc9e4096748_classifier-accessories.jpg"
+    }
+  },
+  {
+    "objectId": "Tx30jtfFTm",
+    "category": "Electronics",
+    "createdAt": "2019-07-13T15:00:28.646Z",
+    "updatedAt": "2019-07-13T15:01:12.300Z",
+    "image": {
+      "__type": "File",
+      "name": "0afe25063be38e4db2d4c0c6aa87deca_classifier-electronics.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/0afe25063be38e4db2d4c0c6aa87deca_classifier-electronics.jpg"
+    }
+  },
+  {
+    "objectId": "tMOn65yLin",
+    "category": "Organizations",
+    "createdAt": "2019-07-13T15:01:47.205Z",
+    "updatedAt": "2019-07-13T15:02:07.533Z",
+    "image": {
+      "__type": "File",
+      "name": "a94350aee192b5397e707745f6e1b92b_classifier-organizations.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/a94350aee192b5397e707745f6e1b92b_classifier-organizations.jpg"
+    }
+  },
+  {
+    "objectId": "ssCfEBRe4n",
+    "category": "Home Decoration",
+    "createdAt": "2019-07-13T15:02:10.745Z",
+    "updatedAt": "2019-07-13T15:03:07.123Z",
+    "image": {
+      "__type": "File",
+      "name": "f3ee6144fb91197da3f84ed99bd32079_classifier-home-decoration.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/f3ee6144fb91197da3f84ed99bd32079_classifier-home-decoration.jpg"
+    }
+  },
+  {
+    "objectId": "Ygd5WlzDPx",
+    "category": "Cosmetics",
+    "createdAt": "2019-07-13T15:02:56.516Z",
+    "updatedAt": "2019-07-13T15:03:27.528Z",
+    "image": {
+      "__type": "File",
+      "name": "5830df8590695107feb1a3f4d2d04d96_classifier-cosmetics.jpg",
+      "url": "https://parsefiles.back4app.com/JyqGeeiLCtZb5TMqKpQEpvqtXHYo91qzkmiY08Xa/5830df8590695107feb1a3f4d2d04d96_classifier-cosmetics.jpg"
+    }
+  }
+]
+}
