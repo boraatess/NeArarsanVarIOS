@@ -38,7 +38,7 @@
         <!--Ads List-->
         <scene sceneID="pPQ-Fd-HsW">
             <objects>
-                <viewController storyboardIdentifier="AdsList" id="kiN-gP-QdW" customClass="AdsList" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdsList" id="kiN-gP-QdW" customClass="AdsList" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hCa-xl-klL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,7 +320,7 @@
                                     <inset key="sectionInset" minX="5" minY="10" maxX="5" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdCell" id="2mg-FN-ctb" customClass="AdCell" customModule="Classifier" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdCell" id="2mg-FN-ctb" customClass="AdCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="5" y="10" width="140" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -494,7 +494,7 @@
         <!--Ad Details-->
         <scene sceneID="oc1-j4-Rf1">
             <objects>
-                <viewController storyboardIdentifier="AdDetails" hidesBottomBarWhenPushed="YES" id="HE1-4N-AQC" customClass="AdDetails" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdDetails" hidesBottomBarWhenPushed="YES" id="HE1-4N-AQC" customClass="AdDetails" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ow7-0z-Eta">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="884"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -547,7 +547,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueb-ax-Wom">
                                 <rect key="frame" x="0.0" y="44" width="374" height="840"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QvE-F5-rGN" customClass="ImageCarouselView" customModule="Classifier" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QvE-F5-rGN" customClass="ImageCarouselView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="5" width="374" height="335"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.28602134010000002" blue="0.36025984300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -924,7 +924,7 @@
         <!--Cities-->
         <scene sceneID="x6k-lh-WRf">
             <objects>
-                <viewController storyboardIdentifier="Cities" modalPresentationStyle="fullScreen" id="S3w-DD-aDP" customClass="Cities" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cities" modalPresentationStyle="fullScreen" id="S3w-DD-aDP" customClass="Cities" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qxS-9d-gIV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1005,7 +1005,7 @@
         <!--Categories-->
         <scene sceneID="3t1-ln-V5j">
             <objects>
-                <viewController storyboardIdentifier="Categories" modalPresentationStyle="fullScreen" id="Lsu-P1-pO0" customClass="Categories" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Categories" modalPresentationStyle="fullScreen" id="Lsu-P1-pO0" customClass="Categories" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzC-aw-js6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1084,7 +1084,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="rmk-G2-bpW">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabBar" id="CMi-E5-S4Q" customClass="TabBarController" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBar" id="CMi-E5-S4Q" customClass="TabBarController" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xxI-Mf-7IS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1105,7 +1105,7 @@
         <!--Home Sub Category-->
         <scene sceneID="hpF-1Z-Uf4">
             <objects>
-                <viewController storyboardIdentifier="HomeSubCategory" id="3g5-p4-1c4" customClass="HomeSubCategory" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeSubCategory" id="3g5-p4-1c4" customClass="HomeSubCategory" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Hw-MO-lCn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1149,7 +1149,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubCategoryCell" id="mQc-fR-qcs" customClass="SubCategoryCell" customModule="Classifier" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubCategoryCell" id="mQc-fR-qcs" customClass="SubCategoryCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1216,7 +1216,7 @@
         <!--Home-->
         <scene sceneID="sN1-dI-U5C">
             <objects>
-                <viewController storyboardIdentifier="Home" id="cNy-3f-2fT" customClass="Home" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="cNy-3f-2fT" customClass="Home" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nj0-Jc-Aps">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1263,7 +1263,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="Cyt-MJ-5dp" customClass="CategoryCell" customModule="Classifier" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="Cyt-MJ-5dp" customClass="CategoryCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1333,7 +1333,7 @@
         <!--My Likes-->
         <scene sceneID="lWC-MA-sbs">
             <objects>
-                <viewController storyboardIdentifier="MyLikes" hidesBottomBarWhenPushed="YES" id="ZTl-gF-x1K" customClass="MyLikes" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyLikes" hidesBottomBarWhenPushed="YES" id="ZTl-gF-x1K" customClass="MyLikes" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1MC-j8-ANd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1381,7 +1381,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="2"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LikedAdCell" id="zqh-un-5pc" customClass="LikedAdCell" customModule="Classifier" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LikedAdCell" id="zqh-un-5pc" customClass="LikedAdCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1486,7 +1486,7 @@
         <!--Sell Edit Item-->
         <scene sceneID="JaK-zI-Bzj">
             <objects>
-                <viewController storyboardIdentifier="SellEditItem" id="OWf-Nb-ZuR" customClass="SellEditItem" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellEditItem" id="OWf-Nb-ZuR" customClass="SellEditItem" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w6J-cp-ePQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="814"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1648,7 +1648,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h67-6o-nL4">
                                                 <rect key="frame" x="0.0" y="160" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fME-kL-bmw" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fME-kL-bmw" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="10" width="342" height="50"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -1691,7 +1691,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmC-M3-s0R">
                                                 <rect key="frame" x="0.0" y="230" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02d-BT-394" userLabel="Category Border View" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02d-BT-394" userLabel="Category Border View" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="10" width="342" height="50"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -1734,7 +1734,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xet-E9-sd1">
                                                 <rect key="frame" x="0.0" y="300" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQV-LG-jBz" userLabel="Subcategory Border View" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQV-LG-jBz" userLabel="Subcategory Border View" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="10" width="342" height="50"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -1804,7 +1804,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cY4-rV-G1U">
                                                 <rect key="frame" x="0.0" y="450" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSv-DF-JLV" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSv-DF-JLV" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="5" width="343" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -1845,7 +1845,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Stl-Ot-zPe">
                                                 <rect key="frame" x="0.0" y="520" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhg-SS-74S" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhg-SS-74S" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="5" width="343" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -1886,7 +1886,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14W-gO-cwr">
                                                 <rect key="frame" x="0.0" y="590" width="375" height="100"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wam-Ld-EQJ" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wam-Ld-EQJ" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="5" width="343" height="90"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Açıklama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAg-FU-HYr">
@@ -2018,7 +2018,7 @@
         <!--Sell-->
         <scene sceneID="uKG-6c-bz7">
             <objects>
-                <viewController storyboardIdentifier="Sell" id="mwF-IV-mjJ" customClass="Sell" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sell" id="mwF-IV-mjJ" customClass="Sell" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jz8-9y-oQs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2034,7 +2034,7 @@
         <!--Activity-->
         <scene sceneID="zdA-Vl-vvB">
             <objects>
-                <viewController storyboardIdentifier="Activity" id="W30-N6-LM0" customClass="Activity" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Activity" id="W30-N6-LM0" customClass="Activity" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d3P-Fw-CSD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2076,7 +2076,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" rowHeight="60" id="fZi-7Y-75m" customClass="ActivityCell" customModule="Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" rowHeight="60" id="fZi-7Y-75m" customClass="ActivityCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZi-7Y-75m" id="Qzv-0o-cAj">
@@ -2150,7 +2150,7 @@
         <!--Account-->
         <scene sceneID="5GU-h3-CAP">
             <objects>
-                <viewController storyboardIdentifier="Account" id="wN8-vW-LN4" customClass="Account" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Account" id="wN8-vW-LN4" customClass="Account" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tam-ox-rJV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2288,7 +2288,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyAdCell" id="hmd-VE-0Ea" customClass="MyAdCell" customModule="Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyAdCell" id="hmd-VE-0Ea" customClass="MyAdCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hmd-VE-0Ea" id="boQ-eo-bGK">
@@ -2392,7 +2392,7 @@
         <!--Feedbacks-->
         <scene sceneID="ZSd-ZL-pwl">
             <objects>
-                <viewController storyboardIdentifier="Feedbacks" hidesBottomBarWhenPushed="YES" id="bsC-ue-Prp" customClass="Feedbacks" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Feedbacks" hidesBottomBarWhenPushed="YES" id="bsC-ue-Prp" customClass="Feedbacks" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ztq-RJ-rhO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2432,7 +2432,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeedbackCell" id="uNP-2Z-Bxi" customClass="FeedbackCell" customModule="Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeedbackCell" id="uNP-2Z-Bxi" customClass="FeedbackCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uNP-2Z-Bxi" id="VaY-SB-Vsx">
@@ -2548,14 +2548,13 @@
         <!--Explore-->
         <scene sceneID="APZ-xJ-H1F">
             <objects>
-                <viewController id="Mis-TI-Qc1" customClass="Explore" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mis-TI-Qc1" customClass="Explore" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="llP-YH-pjX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gph-nX-gy8">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gph-nX-gy8">
                                 <rect key="frame" x="40" y="220" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2c-D7-s2i" userLabel="Header View">
@@ -2585,7 +2584,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="2"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="ExploreAdCell" id="vyB-eS-ylp" userLabel="ExploreAdCell" customClass="ExploreAdCell" customModule="Classifier" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="ExploreAdCell" id="vyB-eS-ylp" userLabel="ExploreAdCell" customClass="ExploreAdCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -2614,34 +2613,26 @@
                                     <outlet property="delegate" destination="Mis-TI-Qc1" id="BLk-C4-hfv"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOi-F6-V3g" userLabel="Ad Banner View">
-                                <rect key="frame" x="0.0" y="469" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="gz0-aI-gtS" userLabel="Ad Banner View Height"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vIw-14-VUg"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Od8-SH-fb5" firstAttribute="top" secondItem="p2c-D7-s2i" secondAttribute="bottom" id="7SK-fl-3wn"/>
-                            <constraint firstItem="Od8-SH-fb5" firstAttribute="trailing" secondItem="LOi-F6-V3g" secondAttribute="trailing" id="9g7-nv-Wz3"/>
+                            <constraint firstItem="Gph-nX-gy8" firstAttribute="centerY" secondItem="llP-YH-pjX" secondAttribute="centerY" id="COS-5S-Dqe"/>
                             <constraint firstItem="p2c-D7-s2i" firstAttribute="top" secondItem="llP-YH-pjX" secondAttribute="top" id="HG3-7U-3Up"/>
                             <constraint firstItem="p2c-D7-s2i" firstAttribute="trailing" secondItem="Od8-SH-fb5" secondAttribute="trailing" id="JST-sX-tVb"/>
                             <constraint firstItem="Od8-SH-fb5" firstAttribute="top" secondItem="llP-YH-pjX" secondAttribute="top" constant="64" id="JfB-Go-ZkX"/>
                             <constraint firstItem="p2c-D7-s2i" firstAttribute="leading" secondItem="Od8-SH-fb5" secondAttribute="leading" id="Pp6-t2-IYT"/>
-                            <constraint firstItem="Od8-SH-fb5" firstAttribute="leading" secondItem="LOi-F6-V3g" secondAttribute="leading" id="eMO-ND-548"/>
+                            <constraint firstItem="vIw-14-VUg" firstAttribute="bottom" secondItem="Gph-nX-gy8" secondAttribute="bottom" constant="171" id="Yk4-PY-IXl"/>
+                            <constraint firstItem="vIw-14-VUg" firstAttribute="bottom" secondItem="Od8-SH-fb5" secondAttribute="bottom" constant="50" id="Z5Q-AN-pYY"/>
+                            <constraint firstItem="Gph-nX-gy8" firstAttribute="leading" secondItem="vIw-14-VUg" secondAttribute="leading" constant="40" id="g5Q-zj-rax"/>
                             <constraint firstAttribute="trailing" secondItem="p2c-D7-s2i" secondAttribute="trailing" id="jM9-RO-3eq"/>
-                            <constraint firstItem="LOi-F6-V3g" firstAttribute="bottom" secondItem="vIw-14-VUg" secondAttribute="bottom" id="mPh-Fg-8Tw"/>
-                            <constraint firstItem="LOi-F6-V3g" firstAttribute="top" secondItem="Od8-SH-fb5" secondAttribute="bottom" id="sAI-dd-FKh"/>
+                            <constraint firstItem="Od8-SH-fb5" firstAttribute="centerX" secondItem="Gph-nX-gy8" secondAttribute="centerX" id="uit-lk-h21"/>
                             <constraint firstItem="p2c-D7-s2i" firstAttribute="leading" secondItem="llP-YH-pjX" secondAttribute="leading" id="y7B-Gk-OOC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KVt-Ho-4Ob"/>
                     <connections>
-                        <outlet property="adBannerView" destination="LOi-F6-V3g" id="S2P-xe-UZT"/>
-                        <outlet property="adBannerViewHeight" destination="gz0-aI-gtS" id="Udw-Ez-F3M"/>
                         <outlet property="exploreadsCollView" destination="Od8-SH-fb5" id="7eX-kW-bRF"/>
                         <outlet property="headerView" destination="p2c-D7-s2i" id="vCa-sN-9St"/>
                     </connections>
@@ -2688,7 +2679,7 @@
         <!--Sort By-->
         <scene sceneID="wsP-N9-5k9">
             <objects>
-                <viewController storyboardIdentifier="SortBy" modalPresentationStyle="fullScreen" id="k3u-sz-Nxp" customClass="SortBy" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SortBy" modalPresentationStyle="fullScreen" id="k3u-sz-Nxp" customClass="SortBy" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rob-cS-tlf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2767,7 +2758,7 @@
         <!--Subcategories-->
         <scene sceneID="6BA-vI-vhi">
             <objects>
-                <viewController storyboardIdentifier="Subcategories" modalPresentationStyle="fullScreen" id="1MK-8W-9q2" customClass="Subcategories" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Subcategories" modalPresentationStyle="fullScreen" id="1MK-8W-9q2" customClass="Subcategories" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uNl-E4-axw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2846,7 +2837,7 @@
         <!--Type-->
         <scene sceneID="Wif-VJ-NTh">
             <objects>
-                <viewController storyboardIdentifier="Type" modalPresentationStyle="fullScreen" id="oa1-w5-Jp6" customClass="Type" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Type" modalPresentationStyle="fullScreen" id="oa1-w5-Jp6" customClass="Type" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Qc-sG-9Fp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2925,7 +2916,7 @@
         <!--Report Ad Or User-->
         <scene sceneID="MTh-7Q-hmc">
             <objects>
-                <viewController storyboardIdentifier="ReportAdOrUser" id="oOX-lz-vLW" customClass="ReportAdOrUser" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReportAdOrUser" id="oOX-lz-vLW" customClass="ReportAdOrUser" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aNp-bt-1Hl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3031,7 +3022,7 @@
         <!--Chats-->
         <scene sceneID="AMd-vH-ftT">
             <objects>
-                <viewController storyboardIdentifier="Chats" title="Chats" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2kQ-f4-SaX" customClass="Chats" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chats" title="Chats" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2kQ-f4-SaX" customClass="Chats" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tzl-yn-WZL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3071,7 +3062,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatsCell" rowHeight="70" id="Ids-mX-s04" customClass="ChatsCell" customModule="Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatsCell" rowHeight="70" id="Ids-mX-s04" customClass="ChatsCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ids-mX-s04" id="0Ak-tp-M58">
@@ -3157,7 +3148,7 @@
         <!--Edit Profile-->
         <scene sceneID="27u-wT-VEy">
             <objects>
-                <viewController storyboardIdentifier="EditProfile" hidesBottomBarWhenPushed="YES" id="iJf-rt-8qV" customClass="EditProfile" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditProfile" hidesBottomBarWhenPushed="YES" id="iJf-rt-8qV" customClass="EditProfile" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpx-nC-S6H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3243,7 +3234,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOF-7J-4M6">
                                                 <rect key="frame" x="0.0" y="100" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5g-TM-ycm" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5g-TM-ycm" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="5" width="335" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -3283,7 +3274,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WB5-ga-1md">
                                                 <rect key="frame" x="0.0" y="170" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xnk-4t-6fv" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xnk-4t-6fv" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="5" width="335" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -3323,7 +3314,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqK-FY-Qir">
                                                 <rect key="frame" x="0.0" y="240" width="375" height="70"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6zK-WJ-ehl" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6zK-WJ-ehl" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="5" width="335" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -3363,7 +3354,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-dt-R4t">
                                                 <rect key="frame" x="0.0" y="310" width="375" height="130"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tel-bG-GGy" customClass="BorderView" customModule="Classifier" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tel-bG-GGy" customClass="BorderView" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="5" width="335" height="120"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                         <subviews>
@@ -3492,7 +3483,7 @@
         <!--Inbox-->
         <scene sceneID="WU7-X6-NVN">
             <objects>
-                <viewController storyboardIdentifier="Inbox" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BXy-wf-v2V" customClass="Inbox" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Inbox" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BXy-wf-v2V" customClass="Inbox" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Hd-fr-A0Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3551,7 +3542,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.8980392157" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InboxCell" rowHeight="100" id="sQB-1G-Q79" customClass="InboxCell" customModule="Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InboxCell" rowHeight="100" id="sQB-1G-Q79" customClass="InboxCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="sQB-1G-Q79" id="PP2-9w-Uh8">
@@ -3600,7 +3591,7 @@
                                             <outlet property="messageTxtView" destination="fL7-LZ-c9a" id="61d-K0-kVO"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InboxCell2" rowHeight="100" id="95T-Rk-XE0" customClass="InboxCell2" customModule="Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InboxCell2" rowHeight="100" id="95T-Rk-XE0" customClass="InboxCell2" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="128" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="95T-Rk-XE0" id="Gmu-pO-t1C">
@@ -3765,7 +3756,7 @@
         <!--User Profile-->
         <scene sceneID="uPK-ty-k6d">
             <objects>
-                <viewController storyboardIdentifier="UserProfile" hidesBottomBarWhenPushed="YES" id="6Ap-CP-Vh6" customClass="UserProfile" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserProfile" hidesBottomBarWhenPushed="YES" id="6Ap-CP-Vh6" customClass="UserProfile" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDg-4D-gZ0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3873,7 +3864,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyAdCell" id="TZh-qI-g04" customClass="MyAdCell" customModule="Classifier" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyAdCell" id="TZh-qI-g04" customClass="MyAdCell" customModule="Ne_Ararsan_Var" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TZh-qI-g04" id="qkb-bJ-NBh">
@@ -3978,7 +3969,7 @@
         <!--Send Feedback-->
         <scene sceneID="kb8-LZ-u5T">
             <objects>
-                <viewController storyboardIdentifier="SendFeedback" id="P5J-6P-zOy" customClass="SendFeedback" customModule="Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SendFeedback" id="P5J-6P-zOy" customClass="SendFeedback" customModule="Ne_Ararsan_Var" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mT6-fF-8D8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

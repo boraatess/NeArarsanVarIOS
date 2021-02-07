@@ -4,6 +4,7 @@ import Parse
 import AuthenticationServices
 
 @available(iOS 13.0, *)
+
 class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate {
 
     private let signinButton = ASAuthorizationAppleIDButton()
@@ -24,8 +25,17 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     }
     
     override func viewDidLayoutSubviews() {
-        signinButton.frame = CGRect(x: 75, y: 670, width: 260, height: 50)
-        // signinButton.center = view.center
+       var constraits = [NSLayoutConstraint]()
+        
+        NSLayoutConstraint.activate(constraits)
+        constraits.append(signinButton.leadingAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.leadingAnchor, constant: 100))
+        constraits.append(signinButton.trailingAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.trailingAnchor))
+        constraits.append(signinButton.bottomAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.bottomAnchor))
+        constraits.append(signinButton.topAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.topAnchor))
+        
+        signinButton.center = view.center
+        signinButton.frame = CGRect(x:view.frame.size.width - 510, y:view.frame.size.height - 220,
+                                    width: 260,height: 50)
     }
 
     override func viewDidLoad() {
@@ -33,12 +43,16 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
         
         // Call functions
         setupWizardImages()
-        view.addSubview(signinButton)
+        //view.addSubview(signinButton)
         signinButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
         
         // COMMENT THIS LINE OF CODE IF YOU DON'T WANT AN AUTOMATIC SCROLL OF THE WIZARD
         scrollTimer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(automaticScroll), userInfo: nil, repeats: true)
-
+        
+    }
+    
+    @IBAction func SigninWithApple(_ sender: Any) {
+        didTapSignIn()
     }
     
     // MARK: - SETUP WIZARD IMAGES
@@ -118,7 +132,7 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     {
         
         let alertController = UIAlertController(title:APP_NAME,
-                                                message:"Facebook Login is not available in demo app",
+                                                message:"Facebook ile giriş yapmak şuan için aktif değil",
                                                 preferredStyle:.alert)
         self.present(alertController,animated:true,completion:{Timer.scheduledTimer(withTimeInterval: 2, repeats:false, block: {_ in
             self.dismiss(animated: true, completion: nil)

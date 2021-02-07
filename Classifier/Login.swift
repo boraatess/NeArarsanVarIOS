@@ -10,14 +10,10 @@ class Login: UIViewController, UITextFieldDelegate {
     @IBOutlet var containerScrollView: UIScrollView!
     @IBOutlet var usernameTxt: UITextField!
     @IBOutlet var passwordTxt: UITextField!
-    
     @IBOutlet var loginViews: [UIView]!
     @IBOutlet weak var loginOutlet: UIButton!
-    
     @IBOutlet var loginButtons: [UIButton]!
-    
     @IBOutlet weak var logoImage: UIImageView!
-    
     @IBOutlet weak var appNameLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,8 +33,8 @@ class Login: UIViewController, UITextFieldDelegate {
         
         // Change placeholder's color
         let color = UIColor.white
-        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: color])
-        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: color])
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "kullanıcı adı", attributes: [NSAttributedStringKey.foregroundColor: color])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "şifre", attributes: [NSAttributedStringKey.foregroundColor: color])
         
         //Login button background color
         loginOutlet.setTitleShadowColor(MAIN_COLOR, for: .normal)

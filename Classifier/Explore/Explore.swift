@@ -6,52 +6,41 @@ import AudioToolbox
 @available(iOS 13.0, *)
 
 class ExploreAdCell: UICollectionViewCell{
-    
     @IBOutlet weak var exploreadImage: UIImageView!
-    
 }
 
 class Explore: UIViewController {
     
     @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var adBannerView: UIView!
-    @IBOutlet weak var adBannerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var exploreadsCollView: UICollectionView!
     
    // let adMobBannerView = GADBannerView()
-    
     var exploreadsArray = [PFObject]()
-    
     var cellSize = CGSize()
-    
     var refresher:UIRefreshControl!
 
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .default
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.isNavigationBarHidden = true
-        
         //safeAreaView.backgroundColor = MAIN_COLOR
         headerView.backgroundColor = MAIN_COLOR
         
         cellSize = CGSize(width: explorecellWidth, height: explorecellWidth)
     
         // Init ad banners
-       // initAdMobBanner()
+        // initAdMobBanner()
 
         self.refresher = UIRefreshControl()
         self.exploreadsCollView!.alwaysBounceVertical = true
         self.refresher.tintColor = UIColor.black
         self.refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
         self.exploreadsCollView!.addSubview(refresher)
-        
         queryAds()
-        
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -61,14 +50,12 @@ class Explore: UIViewController {
         if installation?.badge != 0 {
             self.tabBarController?.tabBar.items![3].badgeValue = "!"
         }
-
     }
     
     @objc func loadData() {
         //code to execute during refresher
         stopRefresher()
         //Call this to stop refresher
-        
         exploreadsArray.shuffle()
         exploreadsCollView.reloadData()
     }
@@ -81,9 +68,7 @@ class Explore: UIViewController {
     func queryAds() {
         
         showHUD("Lütfen Bekleyin...")
-
         let query = PFQuery(className: ADS_CLASS_NAME)
-
         query.order(byDescending: "createdAt")
         query.whereKey(ADS_IS_REPORTED, equalTo: false)
         
@@ -93,19 +78,16 @@ class Explore: UIViewController {
                 self.exploreadsArray = objects!
                 self.hideHUD()
                 self.exploretypeAds()
-                
             }
             else
             {
                 self.simpleAlert("\(error!.localizedDescription)")
                 self.hideHUD()
             }
-            
         }
     }
     
     func exploretypeAds() {
-
         self.exploreadsCollView.reloadData()
     }
 
@@ -123,7 +105,7 @@ class Explore: UIViewController {
         adMobBannerView.load(request)
     }
     */
-    
+    /*
     // Hide the banner
     func hideBanner(_ banner: UIView) {
         UIView.beginAnimations("hideBanner", context: nil)
@@ -146,7 +128,6 @@ class Explore: UIViewController {
         banner.isHidden = false
     }
     
-    /*
     // AdMob banner available
     func adViewDidReceiveAd(_ view: GADBannerView) {
         print("AdMob loaded!")
@@ -203,7 +184,6 @@ extension Explore: UICollectionViewDataSource, UICollectionViewDelegate, UIColle
         return cellSize
     }
 
-    
     // TAP ON A CELL -> SHOW AD's DETAILS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Get Ad Object

@@ -73,7 +73,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIImagePickerControllerDele
         
         //Signup button background color
         signUpOutlet.setTitleShadowColor(MAIN_COLOR, for: .normal)
-
+        signUpOutlet.setTitle("Devam", for: .normal)
     }
     
     // MARK: - TAP TO DISMISS KEYBOARD
