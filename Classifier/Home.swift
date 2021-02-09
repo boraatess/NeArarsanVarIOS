@@ -1,4 +1,10 @@
 
+//  Ne Ararsan Var
+//
+//  Created by bora on 9.02.2021.
+//  Copyright © 2021 Developer Bora Ateş. All rights reserved.
+//
+
 import UIKit
 import Parse
 import AudioToolbox
@@ -22,12 +28,10 @@ class Home: UIViewController {
     @IBOutlet weak var adBannerViewHeight: NSLayoutConstraint!
     
     @IBOutlet weak var categoriesCollView: UICollectionView!
-    
     @IBOutlet weak var chatsOutlet: UIButton!
-    
     @IBOutlet weak var appNameLabel: UILabel!
     
-//    let adMobBannerView = GADBannerView()
+    //let adMobBannerView = GADBannerView()
     
     /* Variables */
     var categoriesArray: [PFObject] = []

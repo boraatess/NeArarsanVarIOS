@@ -1,4 +1,10 @@
 
+//  Ne Ararsan Var
+//
+//  Created by bora on 9.02.2021.
+//  Copyright © 2021 Developer Bora Ateş. All rights reserved.
+//
+
 import UIKit
 import Parse
 
@@ -29,12 +35,10 @@ class SignUp: UIViewController, UITextFieldDelegate, UIImagePickerControllerDele
     @IBOutlet weak var usernameMessageTxt: UITextView!
     
     @IBOutlet weak var tosView: UIView!
-    
     @IBOutlet weak var fullnameView: UIView!
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var usernameView: UIView!
-    
     @IBOutlet weak var fullnameMessageView: UIView!
     @IBOutlet weak var emailMessageView: UIView!
     @IBOutlet weak var passwordMessageView: UIView!
@@ -276,7 +280,6 @@ class SignUp: UIViewController, UITextFieldDelegate, UIImagePickerControllerDele
                 }
             }
         }
-        
 }
         
     // MARK: - CHECKBOX BUTTON

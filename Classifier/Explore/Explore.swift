@@ -1,4 +1,9 @@
 
+//  Ne Ararsan Var
+//  Created by bora on 9.02.2021.
+//  Copyright © 2021 Developer Bora Ateş. All rights reserved.
+//
+
 import UIKit
 import Parse
 import AudioToolbox

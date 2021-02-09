@@ -1,4 +1,10 @@
 
+//  Ne Ararsan Var
+//
+//  Created by bora on 9.02.2021.
+//  Copyright © 2021 Developer Bora Ateş. All rights reserved.
+//
+
 import UIKit
 import Parse
 import AuthenticationServices
@@ -7,7 +13,6 @@ import AuthenticationServices
 
 class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate {
 
-    private let signinButton = ASAuthorizationAppleIDButton()
     /* Views */
     @IBOutlet weak var containerScrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -15,7 +20,8 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     
     /* Variables */
     var scrollTimer = Timer()
-
+    var user: AppleUser?
+    
     // SET THE NUMBER OF IMAGES ACCORDINGLY TO THE IMAGES YOU'VE PLACED IN THE 'WIZARD IMAGES' FOLDER IN Assets.xcassets
     let numberOfImages = 3
         
@@ -24,31 +30,16 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
         return true
     }
     
-    override func viewDidLayoutSubviews() {
-       var constraits = [NSLayoutConstraint]()
-        
-        NSLayoutConstraint.activate(constraits)
-        constraits.append(signinButton.leadingAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.leadingAnchor, constant: 100))
-        constraits.append(signinButton.trailingAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.trailingAnchor))
-        constraits.append(signinButton.bottomAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.bottomAnchor))
-        constraits.append(signinButton.topAnchor.constraint(equalTo: signinButton.safeAreaLayoutGuide.topAnchor))
-        
-        signinButton.center = view.center
-        signinButton.frame = CGRect(x:view.frame.size.width - 510, y:view.frame.size.height - 220,
-                                    width: 260,height: 50)
-    }
-
     override func viewDidLoad() {
             super.viewDidLoad()
         
         // Call functions
         setupWizardImages()
-        //view.addSubview(signinButton)
-        signinButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
-        
         // COMMENT THIS LINE OF CODE IF YOU DON'T WANT AN AUTOMATIC SCROLL OF THE WIZARD
         scrollTimer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(automaticScroll), userInfo: nil, repeats: true)
         
+        print("User id is \(user?.id ?? "") \n First name is \(String(describing: user?.firstname))   Last name is \(String(describing: user?.lastname)) \n email is \(String(describing: user?.email))")
+    
     }
     
     @IBAction func SigninWithApple(_ sender: Any) {
@@ -112,7 +103,6 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
         let pageWidth = containerScrollView.frame.size.width
         let page = Int(floor((containerScrollView.contentOffset.x * 2 + pageWidth) / (pageWidth * 2)))
         pageControl.currentPage = page
-        
     }
         
     // MARK: - AUTOMATIC SCROLL
@@ -130,14 +120,12 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     // MARK: - FACEBOOK LOGIN BUTTON
     @IBAction func facebookButt(_ sender: Any)
     {
-        
         let alertController = UIAlertController(title:APP_NAME,
                                                 message:"Facebook ile giriş yapmak şuan için aktif değil",
                                                 preferredStyle:.alert)
         self.present(alertController,animated:true,completion:{Timer.scheduledTimer(withTimeInterval: 2, repeats:false, block: {_ in
             self.dismiss(animated: true, completion: nil)
         })})
-
     }
         
     // MARK: - SIGN IN BUTTON
@@ -179,25 +167,39 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     
 }
 
-extension UIViewController: ASAuthorizationControllerDelegate {
+extension Wizard: ASAuthorizationControllerDelegate {
     public func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
         print("failed...")
+        print(error.localizedDescription)
     }
     public func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         switch authorization.credential {
         case let credentials as ASAuthorizationAppleIDCredential:
-            let firstName = credentials.fullName?.givenName
-            let lastName = credentials.fullName?.familyName
-            let email = credentials.email
+            let appleuser = AppleUser(credentials: credentials)
+            let userid = appleuser.id
+            let firstName = appleuser.firstname
+            let lastName = appleuser.lastname
+            let email = appleuser.email
+            print("User id is \(userid) \n First name is \(String(describing: firstName)) Last name is \(String(describing: lastName)) \n email is \(String(describing: email))")
+            
+            if userid.isEmpty && firstName.isEmpty && lastName.isEmpty && email.isEmpty {
+                print("Error! something wrong")
+            }
+            else{
+                let tbc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
+                tbc.selectedIndex = 0
+                tbc.modalPresentationStyle = .overFullScreen
+                self.present(tbc, animated: false, completion: nil)
+            }
             
             break
         default:
             break
         }
     }
-}
+} 
 
-extension UIViewController: ASAuthorizationControllerPresentationContextProviding {
+extension Wizard: ASAuthorizationControllerPresentationContextProviding {
    
     public func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return view.window!

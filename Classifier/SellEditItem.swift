@@ -9,11 +9,9 @@ import Parse
 @available(iOS 13.0, *)
 
 extension SellEditItem: UIImagePickerControllerDelegate {
-    
 }
 
 extension SellEditItem: UITextFieldDelegate, UITextViewDelegate {
-    
 }
 
 class SellEditItem: UIViewController, UINavigationControllerDelegate, CLLocationManagerDelegate {
@@ -36,9 +34,7 @@ class SellEditItem: UIViewController, UINavigationControllerDelegate, CLLocation
     @IBOutlet weak var img3: UIImageView!
     
     @IBOutlet weak var cityOutlet: UIButton!
-   
     @IBOutlet weak var categoryOutlet: UIButton!
-    
     @IBOutlet weak var subcategoryOutlet: UIButton!
    
     @IBOutlet weak var titleTxt: UITextField!
@@ -46,10 +42,8 @@ class SellEditItem: UIViewController, UINavigationControllerDelegate, CLLocation
     @IBOutlet weak var conditionSegmented: UISegmentedControl!
     
     @IBOutlet weak var descriptionTxt: UITextView!
-
     @IBOutlet weak var deleteOutlet: UIButton!
     
-
     /* Variables */
     var adObj = PFObject(className: ADS_CLASS_NAME)
     var pictureTag = Int()
@@ -93,7 +87,6 @@ class SellEditItem: UIViewController, UINavigationControllerDelegate, CLLocation
         descriptionTxt.delegate = self
         priceTxt.delegate = self
         
-        
         // Check if you're editing or selling an item
         if adObj.objectId != nil {
             titleLabel.text = "Düzenle"
@@ -103,10 +96,8 @@ class SellEditItem: UIViewController, UINavigationControllerDelegate, CLLocation
             titleLabel.text = "Paylaş"
             deleteOutlet.isHidden = true
         }
-        
     }
 
-    
     // MARK: - SHOW AD's DETAILS
     func showAdDetails() {
         
@@ -495,6 +486,7 @@ class SellEditItem: UIViewController, UINavigationControllerDelegate, CLLocation
             // Go back to Home screen
             let tbc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
             tbc.selectedIndex = 0
+            tbc.modalPresentationStyle = .overFullScreen
             self.present(tbc, animated: false, completion: nil)
         } else {
             dismiss(animated: true, completion: nil)

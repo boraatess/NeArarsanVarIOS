@@ -84,6 +84,7 @@
 		72FD721F1D37D895008CE6AE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FD721E1D37D895008CE6AE /* EventKitUI.framework */; };
 		72FD72211D37D89B008CE6AE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FD72201D37D89B008CE6AE /* MessageUI.framework */; };
 		72FD72231D37D8D4008CE6AE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FD72221D37D8D4008CE6AE /* Home.swift */; };
+		7BF19CB725D3038E008FD22C /* AppleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF19CB625D3038E008FD22C /* AppleUser.swift */; };
 		8439B6CE23CA05BB0051EAF4 /* SubCategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8439B6CD23CA05BB0051EAF4 /* SubCategoriesViewController.xib */; };
 		8439B6D023CA05CF0051EAF4 /* SubCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439B6CF23CA05CF0051EAF4 /* SubCategoriesViewController.swift */; };
 		843C1CCA22D8B03A001767B3 /* Goldoni_DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 843C1CC922D8B039001767B3 /* Goldoni_DEMO.otf */; };
@@ -203,6 +204,7 @@
 		72FD721E1D37D895008CE6AE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		72FD72201D37D89B008CE6AE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		72FD72221D37D8D4008CE6AE /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7BF19CB625D3038E008FD22C /* AppleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleUser.swift; sourceTree = "<group>"; };
 		82F79FF6D9F3FDBD227C6F31 /* Pods_Ne_Ararsan_Var.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ne_Ararsan_Var.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8439B6CD23CA05BB0051EAF4 /* SubCategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoriesViewController.xib; sourceTree = "<group>"; };
 		8439B6CF23CA05CF0051EAF4 /* SubCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesViewController.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 				724B97031C522DF200F7704D /* AppDelegate.swift */,
 				724B97071C522DF200F7704D /* Main.storyboard */,
 				131397491F1890F90079601E /* TabBarController.swift */,
+				7BF19CB625D3038E008FD22C /* AppleUser.swift */,
 				521118FE211B73730030F030 /* BorderView.swift */,
 				528E4DB8210CBC4D008543C2 /* Login - Register */,
 				528E4DB5210CBC2F008543C2 /* Home */,
@@ -773,6 +776,7 @@
 				72AF49511C522F9700C79F5E /* Configs.swift in Sources */,
 				84C2379B219180A500E31E28 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				84C237A4219180A500E31E28 /* IQNSArray+Sort.swift in Sources */,
+				7BF19CB725D3038E008FD22C /* AppleUser.swift in Sources */,
 				724B971B1C522E6D00F7704D /* TermsOfService.swift in Sources */,
 				84C237A0219180A500E31E28 /* IQUIScrollView+Additions.swift in Sources */,
 				724B97041C522DF200F7704D /* AppDelegate.swift in Sources */,

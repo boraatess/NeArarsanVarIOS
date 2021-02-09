@@ -1,4 +1,10 @@
 
+//  Ne Ararsan Var
+//
+//  Created by bora on 9.02.2021.
+//  Copyright © 2021 Developer Bora Ateş. All rights reserved.
+//
+
 import UIKit
 import Parse
 
@@ -26,7 +32,6 @@ class Login: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         appNameLabel.text = APP_NAME
-        
         // Layouts
         logoImage.layer.cornerRadius = 20
         containerScrollView.contentSize = CGSize(width: containerScrollView.frame.size.width, height: 600)
@@ -49,14 +54,11 @@ class Login: UIViewController, UITextFieldDelegate {
         PFUser.logInWithUsername(inBackground: usernameTxt.text!, password:passwordTxt.text!) { (user, error) -> Void in
             if error == nil {
                 self.hideHUD()
-                
-                //if user!["emailVerified"] as! Bool == true
-                //{
                     // Go to Home screen
                     let tbc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
                     tbc.selectedIndex = 0
+                    tbc.modalPresentationStyle = .overFullScreen
                     self.present(tbc, animated: false, completion: nil)
-                                
             } else {
                 // Login failed. Try again or SignUp
                 self.simpleAlert("\(error!.localizedDescription)")
@@ -120,7 +122,6 @@ class Login: UIViewController, UITextFieldDelegate {
         alert.addAction(cancel)
         present(alert, animated: true, completion: nil)
     }
-    
     
     @IBAction func dismissButt(_ sender: Any) {
         dismiss(animated: true, completion: nil)

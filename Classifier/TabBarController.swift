@@ -1,4 +1,10 @@
 
+//  Ne Ararsan Var
+//
+//  Created by bora on 9.02.2021.
+//  Copyright © 2021 Developer Bora Ateş. All rights reserved.
+//
+
 import UIKit
 import Parse
 
@@ -17,10 +23,17 @@ enum TabBarPage: Int {
 @available(iOS 13.0, *)
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
+    var appleUserId: String = ""
+    var appleFirstName: String = ""
+    var appleLastName: String = ""
+    var appleEmail: String = ""
+    var user: AppleUser?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-
+        
+        print("User id is \(user?.id ?? "") \n First name is \(String(describing: user?.firstname)) Last name is \(String(describing: user?.lastname)) \n email is \(String(describing: user?.email))")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,10 +53,19 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         switch index {
         case 2...4:
             if PFUser.current() == nil {
+                
                 let aVC = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "Wizard") as! Wizard
-                //aVC.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
-                aVC.modalPresentationStyle = .fullScreen
+                aVC.modalPresentationStyle = .overFullScreen
                 present(aVC, animated: true, completion: nil)
+           
+            }
+            else if user?.id != nil && user?.firstname != nil &&
+                        user?.lastname != nil && user?.email != nil {
+                
+                let aVC = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "Wizard") as! Wizard
+                aVC.modalPresentationStyle = .overFullScreen
+                present(aVC, animated: true, completion: nil)
+            
             }
         default:
             break
@@ -87,7 +109,7 @@ extension UIViewController {
   func presentInFullScreen(_ viewController: UIViewController,
                            animated: Bool,
                            completion: (() -> Void)? = nil) {
-    viewController.modalPresentationStyle = .fullScreen
+    viewController.modalPresentationStyle = .overFullScreen
     present(viewController, animated: animated, completion: completion)
   }
 }
