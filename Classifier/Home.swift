@@ -65,6 +65,18 @@ class Home: UIViewController {
         //initAdMobBanner()
         // Call query
         queryCategories()
+        
+        switch traitCollection.userInterfaceStyle {
+        case .dark:
+            appNameLabel.textColor = .darkText
+            break
+        case .light:
+            
+            break
+        default:
+            print("something else")
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -109,61 +121,6 @@ class Home: UIViewController {
             }
         }
     }
-    
-    //func changeTabBar(hidden:Bool, animated: Bool){
-    //    let tabBar = self.tabBarController?.tabBar
-    //    let offset = (hidden ? UIScreen.main.bounds.size.height : UIScreen.main.bounds.size.height - //(tabBar?.frame.size.height)! )
-    //    if offset == tabBar?.frame.origin.y {return}
-    //    print("changing origin y position")
-    //    let duration:TimeInterval = (animated ? 0.5 : 0.0)
-    //    UIView.animate(withDuration: duration,
-    //                   animations: {tabBar?.frame.origin.y = offset},
-    //                   completion:nil)
-    //}
-    //// MARK: - ADMOB BANNER METHODS
-    //func initAdMobBanner() {
-    //    adMobBannerView.adSize = GADAdSizeFromCGSize(CGSize(width: 320, height: 50))
-    //    adMobBannerView.frame = adBannerView.frame
-    //    adMobBannerView.adUnitID = ADMOB_BANNER_UNIT_ID
-    //    adMobBannerView.rootViewController = self
-    //    adMobBannerView.delegate = self
-    //
-    //    view.addSubview(adMobBannerView)
-    //
-    //    let request = GADRequest()
-    //    adMobBannerView.load(request)
-    //}
-    //// Hide the banner
-    //func hideBanner(_ banner: UIView) {
-    //    UIView.beginAnimations("hideBanner", context: nil)
-    //    banner.frame = adBannerView.frame
-    //    UIView.commitAnimations()
-    //    banner.isHidden = true
-    //
-    //    adBannerViewHeight.constant = 0
-    //    view.layoutIfNeeded()
-    //}
-    //// Show the banner
-    //func showBanner(_ banner: UIView) {
-    //    adBannerViewHeight.constant = 50
-    //    view.layoutIfNeeded()
-    //
-    //    UIView.beginAnimations("showBanner", context: nil)
-    //    banner.frame = adBannerView.frame
-    //    UIView.commitAnimations()
-    //    banner.isHidden = false
-    //}
-    //// AdMob banner available
-    //func adViewDidReceiveAd(_ view: GADBannerView) {
-    //    print("AdMob loaded!")
-    //    showBanner(adMobBannerView)
-    //}
-    //
-    //// NO AdMob banner available
-    //func adView(_ view: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-    //    print("AdMob Can't load ads right now, they'll be available later \n\(error)")
-    //    hideBanner(adMobBannerView)
-    //}
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

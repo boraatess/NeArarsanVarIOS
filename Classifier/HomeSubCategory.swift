@@ -52,6 +52,17 @@ class HomeSubCategory: UIViewController {
         
         // Call query
         querySubCategories()
+        
+        switch traitCollection.userInterfaceStyle {
+        case .dark:
+            appNameLabel.textColor = .darkText
+            break
+        case .light:
+            
+            break
+        default:
+            print("something else")
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

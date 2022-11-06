@@ -19,9 +19,9 @@ let SECOND_COLOR = UIColor(red: 246/255, green: 210/255, blue: 88/255, alpha: 1.
 
 // REPLACE THE RED STRINGS BELOW WITH YOUR OWN TEXTS FOR THE EACH WIZARD'S PAGE
 let wizardLabels = [
-    "REKLAMINIZI KOLAYCA PAYLAŞIN \n\nReklamınızı kolayca yükleyip satılık, kiralık, takas veya hediye olarak paylaşabilirsiniz.",
+    "ÜRÜNÜNÜZÜ KOLAYCA PAYLAŞIN \n\nÜrünlerinizi kolayca yükleyip satılık, kiralık, takas veya hediye olarak paylaşabilirsiniz.",
     
-    "KATEGORİLERE GÖRE REKLAMLARI GÖRÜNTÜLE \n\nHer kategorideki reklamları arayabilir ve paylaşabilirsiniz",
+    "KATEGORİLERE GÖRE ÜRÜNLERİ GÖRÜNTÜLE \n\nHer kategorideki ürünleri arayabilir ve paylaşabilirsiniz",
     
     "DİĞER KULLANICILARLA SOHBET \n\nGelişmiş sohbet modülü sayesinde diğer kullanıcılarla sohbet edebilirsiniz.",
 ]

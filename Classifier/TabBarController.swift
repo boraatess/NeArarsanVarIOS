@@ -34,6 +34,21 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         
         print("User id is \(user?.id ?? "") \n First name is \(String(describing: user?.firstname)) Last name is \(String(describing: user?.lastname)) \n email is \(String(describing: user?.email))")
+        
+        if user?.id == nil && user?.firstname == nil && user?.lastname == nil && user?.email == nil {
+            PFUser.current()?.isEqual(.none)
+        }
+        
+        switch traitCollection.userInterfaceStyle {
+        case .dark:
+            
+            break
+        case .light:
+            
+            break
+        default:
+            print("something else")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

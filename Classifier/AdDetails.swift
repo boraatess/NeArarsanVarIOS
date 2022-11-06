@@ -11,23 +11,18 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
     @IBOutlet weak var headerView: UIView!
     
     @IBOutlet weak var pageTitleLabel: UILabel!
-    
     @IBOutlet weak var adTitleLabel: UILabel!
     @IBOutlet weak var adTimeAgoLabel: UILabel!
     @IBOutlet weak var adPriceLabel: UILabel!
     @IBOutlet weak var adConditionlabel: UILabel!
-    
     @IBOutlet weak var adCategoryLabel: UILabel!
-    
     @IBOutlet weak var adSubCategoryLabel: UILabel!
-    
     @IBOutlet weak var adCityLabel: UILabel!
     @IBOutlet weak var adDescriptionTxt: UILabel! //UITextView!
     
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var avatarImg: UIImageView!
-    
     
     @IBOutlet weak var likeOutlet: UIButton!
     
@@ -41,18 +36,17 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var gradientBackgroundImageView: UIImageView!
     
-    
     @IBOutlet weak var feedbackOutlet: UIButton!
     @IBOutlet weak var sendMessageOutlet: UIButton!
-    
+
     @IBOutlet weak var likesCounter: UILabel!
     
     /* Variables */
     var adObj = PFObject(className: ADS_CLASS_NAME)
-    
     var adCurrency = ""
     var adPriceString = ""
     var formattedNumberString = ""
+    var user: AppleUser?
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
@@ -60,14 +54,9 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //stackView.layer.cornerRadius = 20.0
-        //stackView.clipsToBounds = true
-        
+                
         self.topView.roundCorners(corners: [.topLeft, .topRight], radius: 20.0)
         self.bottomView.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 20.0)
-        
         
         adCurrency = "\(adObj[ADS_CURRENCY]!)"
         adPriceString = "\(adObj[ADS_PRICE]!)"
@@ -81,9 +70,7 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
         
         print(formattedNumberString)
 
-        
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self as? UIGestureRecognizerDelegate
-
 
         safeAreaView.backgroundColor = MAIN_COLOR
         headerView.backgroundColor = MAIN_COLOR
@@ -97,7 +84,6 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
 
         adPriceLabel.numberOfLines = 1 // or 1
 
-        
         // Position ImagePreview
         imagePreviewView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         instructionsLabel.isHidden = true
@@ -130,19 +116,14 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
         
     }
     
-
-    
     var carouselImages: [UIImage] = [] {
         didSet {
             self.carouselView.images = carouselImages
         }
     }
-
     
     // MARK: - GET AD DETAILS
     func getAdDetails() {
-        
-
         
         // Get image1
         let imageFile1 = adObj[ADS_IMAGE1] as? PFFileObject
@@ -207,20 +188,11 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
         }
         
         //adPriceLabel.textColor = MAIN_COLOR
-        
         // Get condition
         adConditionlabel.text = "\(adObj[ADS_CONDITION]!)"
         
         // Get category
         adCategoryLabel.text = "\(adObj[ADS_CATEGORY]!)"
-        
-        // Get subcategory
-        //if "\(adObj[ADS_SUBCATEGORY]!)" == "" || "\(adObj[ADS_SUBCATEGORY]!)" == nil {
-        //    adSubCategoryLabel.text = "N/A"
-        //} else {
-        //    adSubCategoryLabel.text = "\(adObj[ADS_SUBCATEGORY]!)"
-        //}
-        
         
         if adObj[ADS_SUBCATEGORY] != nil {
             self.adSubCategoryLabel.text = adObj[ADS_SUBCATEGORY] as? String == "" ? "N/A" : "\(adObj[ADS_SUBCATEGORY]!)"
@@ -231,8 +203,7 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
  
         // Get city
         adCityLabel.text = "\(adObj[ADS_CITY]!)"
-        
-        
+    
         // Get description
         adDescriptionTxt.text = "\(adObj[ADS_DESCRIPTION]!)"
         adDescriptionTxt.sizeToFit()
@@ -251,12 +222,8 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
                     if error == nil { if let imageData = data {
                         self.avatarImg.image = UIImage(data: imageData)
                         }}})
-                
-                
             }
-            
         })
-        
     }
     
     func previewImageAt(page: Int) {
@@ -288,14 +255,11 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
     }
     
     
-    // MARK: - SCROLLVIW DELEGATE FOR ZOOMING IMAGE
+    // MARK: - SCROLLVIEW DELEGATE FOR ZOOMING IMAGE
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imgPrev
     }
-    
-    
-
-    
+        
     // MARK: - SELLER BUTTON -> VIEW SELLER'S PROFILE
     @IBAction func sellerButt(_ sender: Any) {
         let sellerPointer = adObj[ADS_SELLER_POINTER] as! PFUser
@@ -307,9 +271,6 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
             }})
     }
 
-    
-    
-    
     // MARK: - SEND A FEEDBACK BUTTON
     @IBAction func sendFeedbackButt(_ sender: Any) {
         if PFUser.current() != nil {
@@ -331,21 +292,19 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
                             self.navigationController?.pushViewController(aVC, animated: true)
                             
                             // Feedback already sent!
-                        } else { self.simpleAlert("You already sent a feedback to this seller!") }
+                        } else { self.simpleAlert("Bu satıcıya zaten bir geri bildirim gönderdin!") }
                         
                         // error
                     } else {
                         self.simpleAlert("\(error!.localizedDescription)")
                     }}
                 
-                
             }})
         } else {
-            showLoginAlert("You need to be logged in. Want to Login now?")
+            showLoginAlert("Giriş yapmalısın. Şimdi giriş yapmak ister misin?")
         }
     }
 
-    
     // MARK: - OPTIONS BUTTON
     @IBAction func optionsButt(_ sender: UIButton) {
         if PFUser.current() != nil {
@@ -354,8 +313,7 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
                                       preferredStyle: .actionSheet)
         
         // REPORT AD
-        
-        let report = UIAlertAction(title: "Report", style: .default, handler: { (action) -> Void in
+        let report = UIAlertAction(title: "Rapor", style: .default, handler: { (action) -> Void in
             let aVC = self.storyboard?.instantiateViewController(withIdentifier: "ReportAdOrUser") as! ReportAdOrUser
             aVC.adObj = self.adObj
             aVC.reportType = "Ad"
@@ -363,9 +321,9 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
         })
         
         // SHARE AD
-        let share = UIAlertAction(title: "Share", style: .default, handler: { (action) -> Void in
-            let messageStr  = "Check this out: \(self.adObj[ADS_TITLE]!) on #\(APP_NAME)"
-            let img = self.carouselImages.first ?? UIImage(named: "logo")!
+        let share = UIAlertAction(title: "Paylaş", style: .default, handler: { (action) -> Void in
+            let messageStr  = "Kontrol et: \(self.adObj[ADS_TITLE]!) on #\(APP_NAME)"
+            let img = self.carouselImages.first ?? UIImage(named: "neararsanvar")!
             
             let shareItems = [messageStr, img] as [Any]
             
@@ -383,7 +341,7 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
         })
         
         // Cancel button
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) -> Void in })
+        let cancel = UIAlertAction(title: "İptal", style: .cancel, handler: { (action) -> Void in })
         
         alert.addAction(share)
         alert.addAction(report)
@@ -398,11 +356,10 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
         present(alert, animated: true, completion: nil)
             
         } else {
-            showLoginAlert("You need to be logged in. Want to Login now?")
+            showLoginAlert("Giriş yapmalısın. Şimdi giriş yapmak ister misin?")
         }
     }
     
-
     // MARK: - LIKE AD BUTTON
     @IBAction func likeButt(_ sender: UIButton) {
         if PFUser.current() != nil {
@@ -465,24 +422,19 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
                                     }
                                 })
                                 
-                                
-                                
                                 // Save Activity
                                 let activityClass = PFObject(className: ACTIVITY_CLASS_NAME)
                                 activityClass[ACTIVITY_CURRENT_USER] = sellerPointer
                                 activityClass[ACTIVITY_OTHER_USER] = PFUser.current()!
                                 activityClass[ACTIVITY_TEXT] = pushStr
                                 activityClass.saveInBackground()
-                                
-                                
+
                                 // error on saving like
                             } else {
                                 self.simpleAlert("\(error!.localizedDescription)")
                                 self.hideHUD()
                             }})
-                        
-             
-                        // 3. UNLIKE THIS AD :(
+                            // 3. UNLIKE THIS AD :(
                     } else {
                         var likeObj = PFObject(className: LIKES_CLASS_NAME)
                         likeObj = objects![0]
@@ -501,10 +453,6 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
                                 
                                 self.adObj.saveInBackground()
                                 
-                                
-//                                let likesNr = self.adObj[ADS_LIKES] as! Int
-                                //                            self.likeLabel.text = "\(likesNr)"
-                                
                             } else {
                                 self.simpleAlert("\(error!.localizedDescription)")
                                 self.hideHUD()
@@ -518,12 +466,14 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
                     self.hideHUD()
                 }}
             
-        } else {
-            showLoginAlert("You need to be logged in. Want to Login now?")
+        }
+        else if user?.id != nil {
+            showLoginAlert("Giriş yapmalısın. Şimdi giriş yapmak ister misin?")
+        }
+        else {
+            showLoginAlert("Giriş yapmalısın. Şimdi giriş yapmak ister misin?")
         }
     }
-    
-    
     
     @IBAction func chatButt(_ sender: Any) {
         if PFUser.current() != nil {
@@ -548,25 +498,21 @@ class AdDetails: UIViewController, UIScrollViewDelegate, CLLocationManagerDelega
                 }}) // end sellerPointer
             
         } else {
-            showLoginAlert("You need to be logged in. Want to Login now?")
+            showLoginAlert("Giriş yapmalısın. Şimdi giriş yapmak ister misin?")
         }
     }
     
-
     // MARK: - BACK BUTTON
     @IBAction func backButt(_ sender: Any) {
         _ = navigationController?.popViewController(animated: true)
 
     }
     
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
-
 
 extension UIView {
     
