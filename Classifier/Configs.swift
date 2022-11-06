@@ -193,57 +193,57 @@ extension UIViewController {
         let components:DateComponents = (calendar as NSCalendar).components([NSCalendar.Unit.minute , NSCalendar.Unit.hour , NSCalendar.Unit.day , NSCalendar.Unit.weekOfYear , NSCalendar.Unit.month , NSCalendar.Unit.year , NSCalendar.Unit.second], from: earliest, to: latest, options: NSCalendar.Options())
         
         if (components.year! >= 2) {
-            return "\(components.year!) years ago"
+            return "\(components.year!) yıl önce"
         } else if (components.year! >= 1){
             if (numericDates){
-                return "1 year ago"
+                return "1 yıl önce"
             } else {
-                return "Last year"
+                return "Geçen yıl"
             }
         } else if (components.month! >= 2) {
-            return "\(components.month!) months ago"
+            return "\(components.month!) Ay önce"
         } else if (components.month! >= 1){
             if (numericDates){
-                return "1 month ago"
+                return "1 Ay önce"
             } else {
-                return "Last month"
+                return "Geçen Ay"
             }
         } else if (components.weekOfYear! >= 2) {
-            return "\(components.weekOfYear!) weeks ago"
+            return "\(components.weekOfYear!) hafta önce"
         } else if (components.weekOfYear! >= 1){
             if (numericDates){
-                return "1 week ago"
+                return "1 hafta önce"
             } else {
-                return "Last week"
+                return "Geçen Hafta"
             }
         } else if (components.day! >= 2) {
-            return "\(components.day!) days ago"
+            return "\(components.day!) gün önce"
         } else if (components.day! >= 1){
             if (numericDates){
-                return "1 day ago"
+                return "1 gün önce"
             } else {
-                return "Yesterday"
+                return "Dün"
             }
         } else if (components.hour! >= 2) {
-            return "\(components.hour!) hours ago"
+            return "\(components.hour!) saat önce"
         } else if (components.hour! >= 1){
             if (numericDates){
-                return "1 h ago"
+                return "1 sa önce"
             } else {
-                return "An h ago"
+                return "Bir sa önce"
             }
         } else if (components.minute! >= 2) {
-            return "\(components.minute!) minutes ago"
+            return "\(components.minute!) dakika önce"
         } else if (components.minute! >= 1){
             if (numericDates){
-                return "1 min ago"
+                return "1 dk önce"
             } else {
-                return "A min ago"
+                return "Bir dk önce"
             }
         } else if (components.second! >= 3) {
-            return "\(components.second!) seconds"
+            return "\(components.second!) saniye"
         } else {
-            return "Just now"
+            return "Şimdi"
         }
         
     }

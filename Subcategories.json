@@ -3,10 +3,10 @@
 
   {
     "objectId": "916b7GUBrG",
-    "subcategory": "House",
+    "subcategory": "EV",
     "createdAt": "2020-01-07T14:38:11.297Z",
     "updatedAt": "2020-01-11T12:13:36.518Z",
-    "topcategory": "Real Estate",
+    "topcategory": "Emlak",
     "image": {
       "__type": "File",
       "name": "67af74c36b913cb9e58f5f85c692221a_960x0.jpg",
@@ -15,10 +15,10 @@
   },
   {
     "objectId": "iIHcbTG5YF",
-    "subcategory": "Workplace",
+    "subcategory": "İş Yeri",
     "createdAt": "2020-01-07T14:38:17.040Z",
     "updatedAt": "2020-01-11T12:12:33.807Z",
-    "topcategory": "Real Estate",
+    "topcategory": "Emlak",
     "image": {
       "__type": "File",
       "name": "e89aef474b218a9aa593a082ba450daa_smart-office.jpg",
@@ -29,106 +29,106 @@
     "objectId": "PuOatii394",
     "createdAt": "2020-01-09T11:39:52.168Z",
     "updatedAt": "2020-01-10T12:55:12.643Z",
-    "subcategory": "Phone",
-    "topcategory": "Electronics"
+    "subcategory": "Telefon",
+    "topcategory": "Elektronik"
   },
   {
     "objectId": "ykJnEP2yBA",
     "subcategory": "Laptop",
     "createdAt": "2020-01-09T11:40:02.342Z",
     "updatedAt": "2020-01-10T12:55:05.393Z",
-    "topcategory": "Electronics"
+    "topcategory": "Elektronik"
   },
   {
     "objectId": "0H5Z4sG1rK",
-    "subcategory": "Automobile",
+    "subcategory": "Otomobil",
     "createdAt": "2020-01-10T13:37:17.701Z",
     "updatedAt": "2020-01-10T13:37:19.542Z",
-    "topcategory": "Cars"
+    "topcategory": "Vasıta"
   },
   {
     "objectId": "JxRZ77zB6u",
-    "subcategory": "Motorcycle",
+    "subcategory": "Motorsiklet",
     "createdAt": "2020-01-10T13:37:39.829Z",
     "updatedAt": "2020-01-10T13:37:41.808Z",
-    "topcategory": "Cars"
+    "topcategory": "Vasıta"
   },
   {
     "objectId": "4qbLAm4D43",
-    "subcategory": "Women",
+    "subcategory": "Kadın",
     "createdAt": "2020-01-10T13:37:54.835Z",
     "updatedAt": "2020-01-10T13:37:58.589Z",
-    "topcategory": "Clothing"
+    "topcategory": "Kıyafet"
   },
   {
     "objectId": "NeZDJaIkvn",
-    "subcategory": "Men",
+    "subcategory": "Erkek",
     "createdAt": "2020-01-10T13:38:04.670Z",
     "updatedAt": "2020-01-10T13:38:09.185Z",
-    "topcategory": "Clothing"
+    "topcategory": "Kıyafet"
   },
   {
     "objectId": "OX0yGsTrEl",
-    "subcategory": "Kids",
+    "subcategory": "Çocuk",
     "createdAt": "2020-01-10T13:38:13.771Z",
     "updatedAt": "2020-01-10T13:38:16.686Z",
-    "topcategory": "Clothing"
+    "topcategory": "Kıyafet"
   },
   {
     "objectId": "A2gENdYPSf",
-    "topcategory": "Accessories",
+    "topcategory": "Aksesuarlar",
     "createdAt": "2020-01-10T13:38:31.300Z",
     "updatedAt": "2020-01-10T13:38:35.107Z",
-    "subcategory": "Necklace"
+    "subcategory": "Kolye"
   },
   {
     "objectId": "xDGnRY5HXE",
-    "topcategory": "Accessories",
+    "topcategory": "Aksesuarlar",
     "createdAt": "2020-01-10T13:38:47.369Z",
     "updatedAt": "2020-01-10T13:38:49.496Z",
-    "subcategory": "Earring"
+    "subcategory": "Küpe"
   },
   {
     "objectId": "azkdLUiOVL",
-    "subcategory": "Wedding",
+    "subcategory": "Evlilik",
     "createdAt": "2020-01-10T13:39:04.918Z",
     "updatedAt": "2020-01-10T13:39:08.563Z",
-    "topcategory": "Organizations"
+    "topcategory": "Organizasyon"
   },
   {
     "objectId": "SXGv5hOacE",
-    "topcategory": "Organizations",
+    "topcategory": "Organizasyon",
     "createdAt": "2020-01-10T13:39:12.853Z",
     "updatedAt": "2020-01-10T13:39:15.579Z",
-    "subcategory": "Concert"
+    "subcategory": "Konser"
   },
   {
     "objectId": "4wBERE8S5o",
-    "topcategory": "Home Decoration",
+    "topcategory": "Ev Dekorasyon",
     "createdAt": "2020-01-10T13:39:24.873Z",
     "updatedAt": "2020-01-10T13:39:29.664Z",
-    "subcategory": "Living Room"
+    "subcategory": "Salon"
   },
   {
     "objectId": "n5EpRbdFJf",
-    "topcategory": "Home Decoration",
+    "topcategory": "Ev Dekorasyon",
     "createdAt": "2020-01-10T13:39:35.506Z",
     "updatedAt": "2020-01-10T13:39:38.282Z",
-    "subcategory": "Kitchen"
+    "subcategory": "Mutfak"
   },
   {
     "objectId": "nyWy7WF3zx",
-    "subcategory": "Makeup",
+    "subcategory": "Makyaj",
     "createdAt": "2020-01-10T13:39:55.279Z",
     "updatedAt": "2020-01-10T13:39:59.759Z",
-    "topcategory": "Cosmetics"
+    "topcategory": "Kozmetik"
   },
   {
     "objectId": "ALYIbqCGCS",
-    "topcategory": "Cosmetics",
+    "topcategory": "Kozmetik",
     "createdAt": "2020-01-10T13:40:35.987Z",
     "updatedAt": "2020-01-10T13:40:39.033Z",
-    "subcategory": "Body Care"
+    "subcategory": "Vücut Bakım"
   }
 ]
 }

@@ -18,7 +18,9 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var signInButton: UIButton!
     
+    @IBOutlet weak var facebookButton: UIButton!
     /* Variables */
+    @IBOutlet weak var googleButton: UIButton!
     var scrollTimer = Timer()
     var user: AppleUser?
     
@@ -31,8 +33,10 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     }
     
     override func viewDidLoad() {
-            super.viewDidLoad()
+        super.viewDidLoad()
         
+        facebookButton.isHidden = true
+        googleButton.isHidden = true
         // Call functions
         setupWizardImages()
         // COMMENT THIS LINE OF CODE IF YOU DON'T WANT AN AUTOMATIC SCROLL OF THE WIZARD
@@ -75,7 +79,7 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
                 // Create the Label
                 let textLabel = UILabel()
                 textLabel.frame = CGRect(x:xCoord + 10,
-                                      y:view.frame.size.height - 350,
+                                      y:view.frame.size.height - 450,
                                       width: view.frame.size.width - 40,
                                       height: 100)
                 textLabel.numberOfLines = 8
@@ -118,8 +122,7 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
     }
         
     // MARK: - FACEBOOK LOGIN BUTTON
-    @IBAction func facebookButt(_ sender: Any)
-    {
+    @IBAction func facebookButt(_ sender: Any) {
         let alertController = UIAlertController(title:APP_NAME,
                                                 message:"Facebook ile giriş yapmak şuan için aktif değil",
                                                 preferredStyle:.alert)
@@ -128,6 +131,14 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
         })})
     }
         
+    @IBAction func googleButtonClicked(_ sender: Any) {
+        let alertController = UIAlertController(title:APP_NAME,
+                                                message:"Google ile giriş yapmak şuan için aktif değil",
+                                                preferredStyle:.alert)
+        self.present(alertController,animated:true,completion:{Timer.scheduledTimer(withTimeInterval: 2, repeats:false, block: {_ in
+            self.dismiss(animated: true, completion: nil)
+        })})
+    }
     // MARK: - SIGN IN BUTTON
     @IBAction func signInButt(_ sender: Any) {
         let aVC = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "Login") as! Login
@@ -163,6 +174,7 @@ class Wizard: UIViewController, CLLocationManagerDelegate, UIScrollViewDelegate 
         controller.delegate = self
         controller.presentationContextProvider = self
         controller.performRequests()
+        
     }
     
 }
@@ -180,12 +192,25 @@ extension Wizard: ASAuthorizationControllerDelegate {
             let firstName = appleuser.firstname
             let lastName = appleuser.lastname
             let email = appleuser.email
+            
+            let pfUser = PFUser()
+            
             print("User id is \(userid) \n First name is \(String(describing: firstName)) Last name is \(String(describing: lastName)) \n email is \(String(describing: email))")
+            user = appleuser
+            pfUser.username = appleuser.firstname
+            pfUser.objectId = appleuser.id
+            pfUser.email = appleuser.email
+            
+            let tbc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
+            tbc.selectedIndex = 0
+            tbc.modalPresentationStyle = .overFullScreen
+            self.present(tbc, animated: false, completion: nil)
             
             if userid.isEmpty && firstName.isEmpty && lastName.isEmpty && email.isEmpty {
                 print("Error! something wrong")
             }
             else{
+                user = appleuser
                 let tbc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBar") as! UITabBarController
                 tbc.selectedIndex = 0
                 tbc.modalPresentationStyle = .overFullScreen

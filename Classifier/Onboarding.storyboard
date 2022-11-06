@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="4352" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,22 +39,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtn-m4-rZv" userLabel="containerScrollView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-1" width="374" height="668"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neararsanvar" translatesAutoresizingMaskIntoConstraints="NO" id="JWq-Hu-1Nt" userLabel="logo">
-                                        <rect key="frame" x="138" y="45" width="100" height="100"/>
+                                        <rect key="frame" x="137" y="45" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yükleniyor..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sq-fa-9f2">
-                                        <rect key="frame" x="58" y="146" width="260" height="41"/>
+                                        <rect key="frame" x="57" y="146" width="260" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="GerberaW04-Medium" family="GerberaW04-Medium" pointSize="34"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-Mf-N3V">
-                                        <rect key="frame" x="38" y="195" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="195" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beB-H3-D2H">
@@ -68,19 +68,19 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKZ-4h-sk8" userLabel="line">
-                                                <rect key="frame" x="58" y="9" width="1" height="30"/>
+                                                <rect key="frame" x="57" y="9" width="1" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miniUser" translatesAutoresizingMaskIntoConstraints="NO" id="sHM-bB-jzd">
-                                                <rect key="frame" x="5" y="2" width="44" height="44"/>
+                                                <rect key="frame" x="5" y="2" width="44" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zGB-09-wUz">
-                                        <rect key="frame" x="38" y="254" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="254" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBG-DK-ivx">
@@ -94,19 +94,19 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKI-OV-w6v" userLabel="line">
-                                                <rect key="frame" x="58" y="9" width="1" height="30"/>
+                                                <rect key="frame" x="57" y="9" width="1" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miniLock" translatesAutoresizingMaskIntoConstraints="NO" id="rLA-hk-iXI">
-                                                <rect key="frame" x="5" y="2" width="44" height="44"/>
+                                                <rect key="frame" x="5" y="1" width="44" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4av-Qt-YXf">
-                                        <rect key="frame" x="58" y="313" width="260" height="44"/>
+                                        <rect key="frame" x="57" y="313" width="260" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="GerberaW04-Bold" family="GerberaW04-Bold" pointSize="16"/>
@@ -128,11 +128,11 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-BL-jPd">
-                                        <rect key="frame" x="38" y="581" width="300" height="44"/>
+                                        <rect key="frame" x="37" y="582" width="300" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-PX-254">
-                                                <rect key="frame" x="170" y="0.0" width="130" height="44"/>
+                                                <rect key="frame" x="170" y="-1" width="130" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                                 <fontDescription key="fontDescription" name="GerberaW04-Regular" family="GerberaW04-Regular" pointSize="12"/>
                                                 <state key="normal" title="Parolamı unuttum?">
@@ -143,7 +143,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryx-rO-GUW">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="44"/>
+                                                <rect key="frame" x="0.0" y="-1" width="130" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <fontDescription key="fontDescription" name="GerberaW04-Regular" family="GerberaW04-Regular" pointSize="12"/>
                                                 <state key="normal" title="Email ile kayıt ol">
@@ -198,11 +198,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eL8-0z-2KE" userLabel="containerScrollView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-1" width="375" height="668"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neararsanvar" translatesAutoresizingMaskIntoConstraints="NO" id="DZI-Dq-rzS">
-                                        <rect key="frame" x="138" y="67" width="100" height="100"/>
+                                        <rect key="frame" x="137" y="67" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40Q-D9-JB8">
@@ -218,7 +218,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjd-Qn-W8V">
-                                                <rect key="frame" x="88" y="0.0" width="44" height="44"/>
+                                                <rect key="frame" x="87" y="0.0" width="44" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="library_icon"/>
                                                 <connections>
@@ -229,7 +229,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.43395136439999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ja4-Vr-5Pz">
-                                        <rect key="frame" x="38" y="239" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="239" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Kaydolmak çok kolay. Şimdi lütfen adınızı ve soyadınızı yazın" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-U8-hYi">
@@ -242,7 +242,7 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="82l-CX-3cM">
-                                        <rect key="frame" x="38" y="239" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="239" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Güzel. Şimdi e-posta adresinizi yazın." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSG-py-rmK">
@@ -255,7 +255,7 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4I2-Ig-HXv">
-                                        <rect key="frame" x="38" y="239" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="239" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Neredeyse bitti. Şimdi oturum açmak için bir şifre belirleyin." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7j-pB-mR0">
@@ -268,7 +268,7 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4BW-Jg-wQZ">
-                                        <rect key="frame" x="38" y="239" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="239" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ve bitti. Bir kullanıcı adı belirleyin ve uygulamayı kullanmaya başlayın" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3E-Wn-gNd">
@@ -281,7 +281,7 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9JS-fL-uii">
-                                        <rect key="frame" x="38" y="339" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="339" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyw-sP-YGI" userLabel="line">
@@ -290,7 +290,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miniUser" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-qT-1yI">
-                                                <rect key="frame" x="5" y="2" width="44" height="44"/>
+                                                <rect key="frame" x="5" y="2" width="44" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="adını yaz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-re-7A4">
@@ -307,7 +307,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INX-XD-kXe">
-                                        <rect key="frame" x="38" y="339" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="339" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy3-ev-5IN" userLabel="line">
@@ -316,7 +316,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miniEmail" translatesAutoresizingMaskIntoConstraints="NO" id="LJF-fp-BhH">
-                                                <rect key="frame" x="5" y="2" width="44" height="44"/>
+                                                <rect key="frame" x="5" y="2" width="44" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="mail adresini yaz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v50-bK-bfA">
@@ -333,7 +333,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="By1-tV-SPH">
-                                        <rect key="frame" x="38" y="339" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="339" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eVX-G3-xgA" userLabel="line">
@@ -342,7 +342,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miniLock" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-Hz-zoy">
-                                                <rect key="frame" x="5" y="2" width="44" height="44"/>
+                                                <rect key="frame" x="5" y="2" width="44" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="şifreni yaz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-TV-mVU">
@@ -359,7 +359,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WI5-B2-dt9">
-                                        <rect key="frame" x="38" y="339" width="300" height="48"/>
+                                        <rect key="frame" x="37" y="339" width="300" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FdK-j8-6Ak" userLabel="line">
@@ -368,7 +368,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miniUser" translatesAutoresizingMaskIntoConstraints="NO" id="uG8-OB-FZg">
-                                                <rect key="frame" x="5" y="2" width="44" height="44"/>
+                                                <rect key="frame" x="5" y="2" width="44" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="kullanıcı adını yaz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RvF-oX-5Fd">
@@ -445,7 +445,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="And-2v-CgA">
-                                                <rect key="frame" x="0.0" y="0.0" width="260" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="259" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Titillium-Regular" family="Titillium" pointSize="12"/>
                                                 <connections>
@@ -531,7 +531,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwE-q9-hHh">
-                                <rect key="frame" x="70" y="34" width="235" height="30"/>
+                                <rect key="frame" x="69" y="34" width="235" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Titillium-Semibold" family="Titillium" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -578,14 +578,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DHP-IJ-GoI">
-                                <rect key="frame" x="1" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="1" y="0.0" width="374" height="666"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="iMy-8t-2FZ" id="Mwe-iv-I2b"/>
                                 </connections>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="bSX-mA-pRf">
+                                <rect key="frame" x="168" y="617" width="40" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="0.68821522889999998" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eo-lT-w45">
-                                <rect key="frame" x="58" y="503" width="260" height="45"/>
+                                <rect key="frame" x="57" y="390" width="260" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
@@ -603,12 +609,40 @@
                                     <action selector="signInButt:" destination="iMy-8t-2FZ" eventType="touchUpInside" id="dfh-Su-BFM"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="bSX-mA-pRf">
-                                <rect key="frame" x="169" y="617" width="39" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO8-nU-1AG" userLabel="FacebookButt">
+                                <rect key="frame" x="57" y="500" width="260" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="pageIndicatorTintColor" white="1" alpha="0.68821522889999998" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </pageControl>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="-13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Google ile giriş yap" image="google">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleButtonClicked:" destination="iMy-8t-2FZ" eventType="touchUpInside" id="Yp5-M5-Pdc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-qU-j1I">
+                                <rect key="frame" x="57" y="445" width="260" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Apple ile giriş yap">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <imageReference key="image" image="applesign" symbolScale="large" renderingMode="template"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="SigninWithApple:" destination="iMy-8t-2FZ" eventType="touchUpInside" id="ytn-5k-pet"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdQ-8Z-mKe" userLabel="FacebookButt">
                                 <rect key="frame" x="58" y="555" width="260" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -639,27 +673,6 @@
                                     <action selector="tosButt:" destination="iMy-8t-2FZ" eventType="touchUpInside" id="dg2-xf-7v8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-qU-j1I">
-                                <rect key="frame" x="58" y="449" width="260" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Apple ile giriş yap">
-                                            <attributes>
-                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <imageReference key="image" image="applesign" symbolScale="large" renderingMode="template"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large"/>
-                                </state>
-                                <connections>
-                                    <action selector="SigninWithApple:" destination="iMy-8t-2FZ" eventType="touchUpInside" id="ytn-5k-pet"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTJ-CO-oIf" userLabel="dismissButt">
                                 <rect key="frame" x="16" y="24" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -674,6 +687,8 @@
                     </view>
                     <connections>
                         <outlet property="containerScrollView" destination="DHP-IJ-GoI" id="9RB-b5-mY3"/>
+                        <outlet property="facebookButton" destination="SdQ-8Z-mKe" id="EWn-WS-Cja"/>
+                        <outlet property="googleButton" destination="zO8-nU-1AG" id="3Rk-rH-QDG"/>
                         <outlet property="pageControl" destination="bSX-mA-pRf" id="27Z-46-Tfs"/>
                         <outlet property="signInButton" destination="6eo-lT-w45" id="EcE-Ld-KqU"/>
                     </connections>
@@ -690,11 +705,18 @@
         <image name="dismissButt" width="44" height="44"/>
         <image name="dismissButt_white" width="44" height="44"/>
         <image name="facebooknew" width="24" height="24"/>
+        <image name="google" width="48" height="48"/>
         <image name="library_icon" width="44" height="44"/>
         <image name="miniEmail" width="44" height="44"/>
         <image name="miniLock" width="44" height="44"/>
         <image name="miniUser" width="44" height="44"/>
         <image name="neararsanvar" width="554" height="508"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
